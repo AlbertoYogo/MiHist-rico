@@ -1,0 +1,26 @@
+.formulario {
+    /* Borde para el formulario */
+    border: 1px solid white;
+}
+
+.formulario__input {
+    /* Cada input tiene estas característcias */
+    background-color: #FFED02;
+    outline: 0px auto;
+    border: 1px solid black;
+    font-family: RobotoSlap;
+}
+.formulario__input:focus {
+    /* Los inputs cambian cuando estamos rellenandolos */
+    background-color: #FFED02;
+    color: #004D98;
+    font-weight: bold;
+    font-family: RobotoSlap;
+}
+
+.formulario__span {
+    /* Estilos para el span que contiene un '@' */
+    outline: 0px auto;
+    border: 1px solid black;
+}
+

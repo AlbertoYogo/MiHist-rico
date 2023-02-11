@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="icon" href="../assets/images/FC-Barcelona-icon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <title>FC Barcelona</title>
+
+    <!-- Mis estilos -->
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/registrarse.css">
+</head>
+<body>
+        <!-- El header de todas las páginas -->
+        <header class="container-fluid pb-3 fondo-azul cabecera">
+            <section class="row justify-content-between align-items-center">
+                <div class="col-5">
+                    <nav class="navbar navbar-expand-lg navbar-light menu">
+                        <div class="container-fluid">
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                              <li class="nav-item me-3">
+                                <a class=" menu__link menu__link fs-5" aria-current="page" href="../index.html">Inicio</a>
+                              </li>
+                              <li class="nav-item me-3">
+                                <a class="menu__link fs-5" href="estadisticas.html">Estadísticas</a>
+                              </li>
+                              <li class="nav-item me-3">
+                                <a class="menu__link fs-5" href="jugadores.html">Jugadores</a>
+                              </li>
+                              <li class="nav-item me-3 dropdown">
+                                <a class="menu__link fs-5 dropdown-toggle" href="secciones.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Secciones
+                                </a>
+                                <ul class="dropdown-menu fondo-azul" aria-labelledby="navbarDropdownMenuLink">
+                                  <li><a class="dropdown-item menu__link" href="secciones.html#fútbol">Fútbol</a></li>
+                                  <li><a class="dropdown-item menu__link" href="secciones.html#baloncesto">Baloncesto</a></li>
+                                  <li><a class="dropdown-item menu__link" href="secciones.html#balonmano">Balonmano</a></li>
+                                  <li><a class="dropdown-item menu__link" href="secciones.html#hockey">Hockey</a></li>
+                                  <li><a class="dropdown-item menu__link" href="secciones.html#sala">Fútbol sala</a></li>
+                                </ul>
+                              </li>
+                              <li class="nav-item me-3">
+                                <a class="menu__link--activo fs-5" href="registrarse.html">Registrarse</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </nav>
+                </div>
+                <div class="col-1 d-none d-md-block">
+                    <!-- Imagen fluid que aparece desde md -->
+                    <img src="../assets/images/FC-Barcelona-icon.png" class="img-fluid" alt="">
+                </div>
+            </section>
+        </header>
+    
+        <main class="container">
+          <!-- Main que consiste única y llanamente en un formulario -->
+          <section class="row formulario mt-5 rounded p-3 fondo-rojo color-texto">
+            <form class="row g-3 needs-validation" novalidate>
+              <!-- Por debajo de md cada grupo de input-label ocupa 12 -->
+              <!-- Por encima de md se divide princpales en dos filas y luegos una de los botones -->
+              
+              <!-- La primera fila incluye: nombre, apellido, ciudad (col-3 estos primeros) y sexo (col-1 y un offset-1 para que se coloque en medio de los 3 finales) -->
+              <div class="col-md-3">
+                <label for="validationCustom01" class="form-label fs-5 fuente_serifa">Nombre</label>
+                <input type="text" class="form-control formulario__input" id="validationCustom01" value="Alberto" required>
+                <div class="valid-feedback">
+                  Nombre correcto
+                </div>
+              </div>
+              <div class="col-md-3">
+                <label for="validationCustom02" class="form-label fs-5 fuente_serifa">Apellido</label>
+                <input type="text" class="form-control formulario__input" id="validationCustom02" value="López" required>
+                <div class="valid-feedback">
+                  Apellido correcto.
+                </div>
+              </div>
+              <div class="col-md-3">
+                <label for="validationCustom03" class="form-label fs-5 fuente_serifa">Ciudad</label>
+                <input type="text" class="form-control formulario__input" placeholder="Barcelona" id="validationCustom03" required>
+                <div class="invalid-feedback">
+                  Por favor pon una ciudad válida
+                </div>
+              </div>
+              <div class="col-md-1 offset-md-1">
+                <label for="validationCustom03" class="form-label fs-5 fuente_serifa">Sexo</label>
+                <div class="form-check">
+                  <input class="form-check-input formulario__input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Hombre
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input formulario__input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    Mujer
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input formulario__input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                  <label class="form-check-label" for="flexRadioDefault3">
+                    Otro
+                  </label>
+                </div>
+              </div>
+
+              <!-- La segunda línea se divide en correo (col-6), país (col-2), Fecha de nacimiento (col-3) y edad (col-1) -->
+              <div class="col-md-6">
+                <label for="validationCustomUsername" class="form-label fs-5 fuente_serifa">Correo</label>
+                <div class="input-group has-validation">
+                  <span class="input-group-text fondo-azul formulario__span color-texto" id="inputGroupPrepend">@</span>
+                  <input type="email" class="form-control formulario__input" placeholder="ejemplo@correo.es" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                  <div class="invalid-feedback">
+                    Por favor dame tu correo eléctronico
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <label for="validationCustom04" class="form-label fs-5 fuente_serifa">País/continente</label>
+                <select class="form-select formulario__input" id="validationCustom04">
+                  <option selected value="España">España</option>
+                  <option>Portugal</option>
+                  <option>Francia</option>
+                  <option>Alemania</option>
+                  <option>América</option>
+                  <option>Asia</option>
+                  <option>África</option>
+                  <option>Oceania</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <label for="validationCustom05" class="form-label fs-5 fuente_serifa">Fecha de nacimiento</label>
+                <input type="date" class="form-control formulario__input" id="validationCustom05">
+              </div>
+              <div class="col-md-1">
+                <label for="validationCustom05" class="form-label fs-5 fuente_serifa">Edad</label>
+                <input type="number" class="form-control formulario__input" placeholder="00" id="validationCustom05">
+              </div>
+              <div class="col-md-6">
+                <!-- Botón que activa el modal -->
+                  <button type="button" class="btn w-100 fondo-azul color-texto" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Términos y condiciones 
+                  </button>
+
+                  <!-- Modal para las condiciones del formulario -->
+                  <div class="modal fade color-texto" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content fondo-rojo">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Términos y condiciones</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <p>Al registrarse en este formulario acepto los términos y condiciones del FC Barcelona.</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn w-25 color-texto fondo-azul" data-bs-dismiss="modal">Aceptar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-md-6">
+                <!-- Boton submit -->
+                <button class="btn color-texto w-100 fondo-azul" type="submit">Registrarse</button>
+              </div>
+            </form>
+          </section>
+        </main>
+    
+        <!-- El footer de todas las páginas -->
+        <footer class="container-fluid mt-5 pb-4 fondo-azul footer">
+            <!-- Footer con dos secciones -->
+            <section class="row justify-content-between justify-content-sm-around">
+                <!-- Primera sección divida en 3 partes desde sm y anterior en 2 partes -->
+                <div class="col-5 col-sm-3 carta__img">
+                    <img src="../assets/images/FC-Barcelona-icon.png" class="img-fluid carta__img" alt="">
+                </div>
+                <div class="col-5 col-sm-3 pt-4">
+                    <h2 class="footer__tittle">Noticias</h2>
+                    <ul class="footer__list ps-0">
+                        <li class="footer__item"><a href="#" class="footer__link color-texto">- La racha de invictos del fútbol</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link color-texto">- Lideres de la euroleague</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link color-texto">- Clasificados a los playoff de lol</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link color-texto">- Campeones de copa en fútbol sala</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link color-texto">- Eintracht es el rival de la Europa League</a></li>
+                    </ul>
+                </div>
+                <div class=" col-sm-3 d-none d-sm-block">
+                    <h2 class="footer__tittle">Camp Nou</h2>
+                    <img src="../assets/images/Camp nou.jpg" class="img-fluid" alt="">
+                </div>
+            </section>
+            <section class="row w-75 mt-4 pt-4 border-top-1 mx-auto justify-content-around justify-content-md-center redes-sociales">
+                <!-- Sección con dos partes que son Twitter e instagram -->
+                <div class="col-4 col-lg-2 color-texto">
+                    <i class="bi bi-twitter"></i>
+                    <span>@fcbarcelona_es</span>
+                </div>
+                <div class="col-4 col-lg-2 color-texto">
+                    <i class="bi bi-instagram"></i>
+                    <span>FCBarcelona</span>
+                </div>
+            </section>
+        </footer>
+    
+    
+        <script src="../js/bootstrap.bundle.js"></script>
+        <script src="../js/form.js"></script>
+</body>
+</html>

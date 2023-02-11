@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="icon" href="../assets/images/FC-Barcelona-icon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <title>FC Barcelona</title>
+
+    <!-- Mis estilos propios -->
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/secciones.css">
+
+</head>
+<body>
+    <header class="container-fluid pb-3 fondo-azul cabecera">
+        <section class="row justify-content-between align-items-center">
+            <div class="col-5">
+                <nav class="navbar navbar-expand-lg navbar-light menu">
+                    <div class="container-fluid">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                          <li class="nav-item me-3">
+                            <a class=" menu__link menu__link fs-5" aria-current="page" href="../index.html">Inicio</a>
+                          </li>
+                          <li class="nav-item me-3">
+                            <a class=" menu__link fs-5" href="estadisticas.html">Estadísticas</a>
+                          </li>
+                          <li class="nav-item me-3">
+                            <a class=" menu__link fs-5" href="jugadores.html">Jugadores</a>
+                          </li>
+                          <li class="nav-item me-3 dropdown">
+                            <a class="menu__link--activo fs-5 dropdown-toggle" href="secciones.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Secciones
+                            </a>
+                            <ul class="dropdown-menu fondo-azul" aria-labelledby="navbarDropdownMenuLink">
+                              <li><a class="dropdown-item menu__link" href="secciones.html#fútbol">Fútbol</a></li>
+                              <li><a class="dropdown-item menu__link" href="secciones.html#baloncesto">Baloncesto</a></li>
+                              <li><a class="dropdown-item menu__link" href="secciones.html#balonmano">Balonmano</a></li>
+                              <li><a class="dropdown-item menu__link" href="secciones.html#hockey">Hockey</a></li>
+                              <li><a class="dropdown-item menu__link" href="secciones.html#sala">Fútbol sala</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item me-3">
+                            <a class=" menu__link fs-5" href="registrarse.html">Registrarse</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+            <div class="col-1 d-none d-md-block">
+                <!-- Imagen fluid que aparece desde md -->
+                <img src="../assets/images/FC-Barcelona-icon.png" class="img-fluid" alt="">
+            </div>
+        </section>
+    </header>
+
+    <main class="container mt-3">
+        <!-- Main con varios secciones pero dos tipos diferenciales -->
+        <section class="botones text-center">
+            <!-- La primera sección es la de los botones -->
+            <a href="#fútbol"  class="btn fuente_serifa botones__boton fondo-azul">Fútbol</a>
+            <a href="#baloncesto"  class="btn fuente_serifa botones__boton fondo-rojo">Baloncesto</a>
+            <a href="#balonmano"  class="btn fuente_serifa botones__boton fondo-azul">Balonmano</a>
+            <a href="#hockey"  class="btn fuente_serifa botones__boton fondo-rojo">Hockey</a>
+            <a href="#sala"  class="btn fuente_serifa botones__boton fondo-azul">Fútbol sala</a>
+        </section>
+
+        <section class="row justify-content-around mt-3 p-2 rounded fondo-azul equipos" id="fútbol">
+            <!-- El resto de secciones son iguales. -->
+            <!-- Formadas por un h2 como título -->
+            <h2 class="col-12 text-center fuente_serifa equipos__título">Futbol</h2>
+            <!-- Abajo del título esta estructura: imagen, texto, imagen. -->
+            <div class="d-none d-lg-block col-lg-3">
+                <!-- Primera imagen solo se ve desde lg -->
+                <img src="../assets/images/futbol-1.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-6">
+                <!-- El texto siempre está presente -->
+                <p class="color-texto fuente_sans-serif">El Fútbol Club Barcelona fue fundado el 29 de noviembre de 1899 por un grupo de doce aficionados al fútbol, convocados por el suizo Hans Gamper mediante un anuncio publicado en la revista Los Deportes el 22 de octubre del mismo año. Entre los doce fundadores del club había seis españoles, tres suizos, dos ingleses y un alemán. El nombre original escogido fue «Foot-ball Club Barcelona», en inglés, y se designó al suizo Walter Wild como primer presidente del club por ser la persona de más edad de entre las presentes.</p>
+            </div>
+            <div class="d-none d-md-block col-md-6 col-lg-3">
+                <!-- Segunda imagen se ve a partir de md -->
+                <img src="../assets/images/futbol-2.png" class="img-fluid" alt="">
+            </div>
+        </section>
+
+        <section class="row justify-content-around mt-3 p-2 rounded fondo-rojo equipos" id="baloncesto">
+            <h2 class="col-12 text-center fuente_serifa equipos__título">Baloncesto</h2>
+            <div class="d-none d-lg-block col-lg-3">
+                <img src="../assets/images/baloncesto-1.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-6">
+                <p class="color-texto fuente_sans-serif">La sección de baloncesto del Fútbol Club Barcelona fue creada el 24 de octubre de 1926, lo que la convierte en el equipo de baloncesto más antiguo de la Liga ACB. Es el segundo club de España en número de títulos conseguidos, y uno de los de mayor prestigio de Europa. La sección de baloncesto vivió sus mejores años en las décadas de los 80 y los 90, en las que consiguió diversos títulos españoles y europeos. Su título más preciado, la Euroliga, no lo consiguió hasta la temporada 2002-2003, cuando ganó la "Final Four" celebrada en la propia ciudad de Barcelona. En 2010 volvió a ganar la Euroliga en París, venciendo al Olympiakos griego. En octubre de 2010 se convirtió en el primer y único campeón de Europa que consigue derrotar al campeón de la NBA (Los Angeles Lakers año en el que fueron campeones), en partido amistoso organizado por la NBA y la ULEB, en el que no se disputaba ningún título.</p>
+            </div>
+            <div class="d-none d-md-block col-md-6 col-lg-3">
+                <img src="../assets/images/baloncesto-2.png" class="img-fluid" alt="">
+            </div>
+        </section>
+
+        <section class="row justify-content-around mt-3 p-2 rounded fondo-azul equipos" id="balonmano">
+            <h2 class="col-12 text-center fuente_serifa equipos__título">Balonmano</h2>
+            <div class="d-none d-lg-block col-lg-3">
+                <img src="../assets/images/balonmano-1.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-6">
+                <p class="color-texto fuente_sans-serif">La sección de balonmano del Fútbol Club Barcelona fue creada el 23 de noviembre de 1943. Es la sección profesional más laureada de la entidad contabilizando 166 copas y el club más laureado del mundo en balonmano, al ser el conjunto que acumula más títulos tanto a nivel nacional, europeo y mundial. Los equipos de la sección han ganado todos los grandes títulos de clubes que se disputan en el balonmano nacional, europeo, y mundial. Además, la sección de balonmano azulgrana también es la sección del club más laureada en los Juegos Olímpicos, puesto que hasta los Juegos Olímpicos de Tokio 2020 un total de 38 jugadores de la sección han conseguido medallas olímpicas.</p>
+            </div>
+            <div class="d-none d-md-block col-md-6 col-lg-3">
+                <img src="../assets/images/balonmano-2.png" class="img-fluid" alt="">
+            </div>
+        </section>
+
+        <section class="row justify-content-around mt-3 p-2 rounded fondo-rojo equipos" id="hockey">
+            <h2 class="col-12 text-center fuente_serifa equipos__título">Hockey</h2>
+            <div class="d-none d-lg-block col-lg-3">
+                <img src="../assets/images/hockey-1.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-6">
+                <p class="color-texto fuente_sans-serif">La sección de hockey patines del F. C. Barcelona se fundó de manera oficial el día 1 de junio de 1942, a pesar de que un año después desapareció debido a los problemas para conseguir una pista propia.</p>
+                <p class="color-texto fuente_sans-serif">No fue hasta 1948 cuando reapareció, en el preciso momento en que se alquiló la Pista Gran Vía. A lo largo de los siguientes años, y hasta el principio de la década de los 60s, el equipo de hockey patines azulgrana logró mantenerse en la lucha por la primacía estatal. Pero el año 1963, la sección entró en una crisis que se prolongaría hasta siete años a causa de un recorte del presupuesto que el club destinaba a las secciones.</p>
+            </div>
+            <div class="d-none d-md-block col-md-6 col-lg-3">
+                <img src="../assets/images/hockey-2.png" class="img-fluid" alt="">
+            </div>
+        </section>
+
+        <section class="row justify-content-around mt-3 p-2 rounded fondo-azul equipos" id="sala">
+            <h2 class="col-12 text-center fuente_serifa equipos__título">Fútbol sala</h2>
+            <div class="d-none d-lg-block col-lg-3">
+                <img src="../assets/images/sala-1.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-6">
+                <p class="color-texto fuente_sans-serif">La sección de fútbol sala del Fútbol Club Barcelona es un equipo español de fútbol sala situado en Barcelona (España), que juega en la Primera División de la Liga Nacional de Fútbol Sala.</p>
+                <p class="color-texto fuente_sans-serif">La sección de fútbol sala del Fútbol Club Barcelona se fundó oficialmente en 1978. Tras disolverse a principios de los años 80, el club volvió a constituirse en 1986 con la introducción de competiciones nacionales. El F. C. Barcelona es uno de los clubes que disputó la primera temporada de la LNFS en 1989. Es uno de los clubes de fútbol sala más exitosos de España y de Europa.</p>
+            </div>
+            <div class="d-none d-md-block col-md-6 col-lg-3">
+                <img src="../assets/images/sala-2.png" class="img-fluid" alt="">
+            </div>
+        </section>
+    </main>
+
+    <footer class="container-fluid mt-5 pb-4 fondo-azul footer">
+        <!-- Footer con dos secciones -->
+        <section class="row justify-content-between justify-content-sm-around">
+            <!-- Primera sección divida en 3 partes desde sm y anterior en 2 partes -->
+            <div class="col-5 col-sm-3 carta__img">
+                <img src="../assets/images/FC-Barcelona-icon.png" class="img-fluid carta__img" alt="">
+            </div>
+            <div class="col-5 col-sm-3 pt-4">
+                <h2 class="footer__tittle">Noticias</h2>
+                <ul class="footer__list ps-0">
+                    <li class="footer__item"><a href="#" class="footer__link color-texto">- La racha de invictos del fútbol</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link color-texto">- Lideres de la euroleague</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link color-texto">- Clasificados a los playoff de lol</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link color-texto">- Campeones de copa en fútbol sala</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link color-texto">- Eintracht es el rival de la Europa League</a></li>
+                </ul>
+            </div>
+            <div class=" col-sm-3 d-none d-sm-block">
+                <h2 class="footer__tittle">Camp Nou</h2>
+                <img src="../assets/images/Camp nou.jpg" class="img-fluid" alt="">
+            </div>
+        </section>
+        <section class="row w-75 mt-4 pt-4 border-top-1 mx-auto justify-content-around justify-content-md-center redes-sociales">
+            <!-- Sección con dos partes que son Twitter e instagram -->
+            <div class="col-4 col-lg-2 color-texto">
+                <i class="bi bi-twitter"></i>
+                <span>@fcbarcelona_es</span>
+            </div>
+            <div class="col-4 col-lg-2 color-texto">
+                <i class="bi bi-instagram"></i>
+                <span>FCBarcelona</span>
+            </div>
+        </section>
+    </footer>
+
+
+    <script src="../js/bootstrap.bundle.js"></script>
+</body>
+</html>

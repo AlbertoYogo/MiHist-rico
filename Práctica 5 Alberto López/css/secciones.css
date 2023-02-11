@@ -1,0 +1,23 @@
+/* Estilos para los botones */
+.botones__boton {
+    border: 1px solid #FFED02;
+    color: #FFED02;
+}
+.botones__boton:hover {
+    /* Color del texto blanco al pasar el ratón */
+    color: white;
+}
+
+/* Estilos para la secciones en las que hay un equipo */
+.equipos {
+    box-shadow: 6px 6px 4px rgba(35, 35, 35, 0.57);
+}
+.equipos:hover {
+    border: 3px solid #FFED02;
+    box-shadow: 0px 0px;
+}
+.equipos__título {
+    /* Título amarillo y subrayado */
+    color: #FFED02;
+    text-decoration: underline;
+}

@@ -1,0 +1,23 @@
+.contenedor-tabla__tittle {
+    /* El título de las tablas (defensas, mediocampista y delanteros) */
+    background-color: #A50044;
+    text-decoration: underline;
+    color: #FFED02;
+    border: 1px solid black;
+}
+.contenedor-tabla__tittle:hover {
+    /* Al pasar el ratón por encima */
+    background-color: #004D98;
+    color: white;
+}
+
+.tabla {
+    /* Borde exterior de la tabla */
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+.tabla__fila {
+    /* Bordes en cada fila */
+    border: 1px solid #FFED02;
+}
+
