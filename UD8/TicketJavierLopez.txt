@@ -1,0 +1,3 @@
+Precio base del vehículo: 15€
+Precio total: 30€
+Dias de estancia: 2

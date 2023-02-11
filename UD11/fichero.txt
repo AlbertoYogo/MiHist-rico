@@ -1,0 +1,2 @@
+Usuario: admin, contraseña: admin, tipo de usuario: A, DNI: 11111111H
+Usuario: berta, contraseña: berta123, tipo de usuario: U, DNI: 22222222K
