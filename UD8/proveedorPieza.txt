@@ -1,0 +1,8 @@
+El proveedor Suministros Talavera suministra:
+           tornillo
+           clavo
+El proveedor Suministros Torrijos suministra:
+           arandela
+El proveedor Ferretería Ribera suministra:
+           chinchetas
+           martillo
