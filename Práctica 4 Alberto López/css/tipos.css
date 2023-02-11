@@ -1,0 +1,45 @@
+.tipos {
+    /* Separación habitual del header */
+    margin-top: 95px;
+    /* Padding para el border de la izquierda */
+    padding-left: 30px;
+    border-left: 1px solid #fdce10;
+}
+.tipos:hover {
+    /* Borde, color de fondo y sombra al pasar por encima */
+    border: 1px solid #fdce10;
+    background-color: #e14318;
+    box-shadow: 0px 0px 20px #fdd70091;
+}
+
+.tipos__text {
+    /* Los textos del section justificados */
+    text-align: justify;
+}
+
+/* Segundo article */
+.tabla_tipos__tittle {
+    /* Título centrado y subrayado */
+    text-decoration: underline;
+    text-align: center;
+}
+
+.tabla_tipos__section {
+    /* La sección que ocupe un 80% y centrada */
+    width: 80%;
+    margin: 0px auto;
+    /* Padding para todas las direcciones */
+    padding: 10px;
+
+}
+.tabla_tipos__section:hover {
+    /* Mismos estilos en el hover que en tipos */
+    box-shadow: 0px 0px 20px #fdd70091;
+    border: 1px solid #fdce10;
+    background-color: #e14318;
+}
+
+.tabla_tipos__img {
+    /* Imagen que se ajusta al contenedor */
+    width: 100%;
+}

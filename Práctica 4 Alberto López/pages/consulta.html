@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta</title>
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/consulta.css">
+</head>
+<body>
+    <header class="header">
+        <!-- Header con un menú -->
+        <div class="header__menu flex">
+            <nav class="header__nav">
+                <!-- Menú nav -->
+                <ul class="header__list flex">
+                    <li class="header__item"><a class="header__link" href="../index.html">Inicio</a></li>
+                    <li class="header__item"><a class="header__link" href="generaciones.html">Generaciones</a></li>
+                    <li class="header__item"><a class="header__link" href="tipos.html">Tipos</a></li>
+                    <li class="header__item"><a class="header__link" href="spinoff.html">Spinoffs</a></li>
+                    <li class="header__item"><a class="header__link header__link--final header__link--active" href="consulta.html">Consulta</a></li>
+                </ul>
+            </nav>
+            <!-- Imagen pokemon (space-between con el nav) -->
+            <img src="../assets/images/pokemon_logo.png" alt="" class="header__img">
+        </div>
+    </header>
+
+    <!-- Sección con video -->
+    <section class="visor">
+        <!-- Video en loop y muteado de fondo -->
+        <video src="../assets/images/Pokemon ryhorn special attack gif.mp4" autoplay loop muted class="visor__video"></video>
+    </section>
+
+    <main class="main">
+        <!-- Main con un section que es un formulario -->
+        <section class="formulario">
+            <form action="mailto:alguien@gmail.com" method="post">
+                <!-- Fieldset de datos personales -->
+                <fieldset class="datos fieldset">
+                    <legend>Datos personales</legend>
+                    <section class="nombre_apellidos flex">
+                        <!-- Primera section del form para dos campos obligatorios -->
+                        <div class="nombre_apellids__bloque">
+                            <label for="nombre" class="nombre_apellidos__label">Nombre</label>
+                            <input class="inputs nombre_apellidos__input" required type="text" name="nombre" id="nombre" placeholder="Nombre">
+                        </div>
+                        <div class="nombre_apellids__bloque">
+                            <label for="apellidos" class="nombre_apellidos__label">Apellidos</label>
+                            <input class="inputs nombre_apellidos__input" required type="text" name="apellidos" id="apellidos" placeholder="Apellidos">
+                        </div>
+                    </section>
+                    <!-- Dos sections iguales (input + label) -->
+                    <section class="resto">
+                        <label for="correo" class="resto__label">Correo</label>
+                        <input class="inputs resto__input" type="email" name="correo" id="correo" placeholder="ejemplo@gmail.com">
+                    </section>
+                    <section class="resto">
+                        <div>
+                            <label for="edad" class="resto__label">Edad</label>
+                            <input type="number" name="edad" id="edad" placeholder="Edad" class="inputs resto__input">
+                        </div>
+                    </section>
+                </fieldset>
+                <fieldset class="fieldset">
+                    <!-- Fieldset para input:radio -->
+                    <legend>Sexo</legend>
+                    <!-- Section con flex -->
+                    <section class="sexo flex">
+                        <!-- Contenedores con cada input y label -->
+                        <div class="sexo__bloque">
+                            <input type="radio" name="sexo" value="Hombre" id="Hombre" class="inputs">
+                            <label for="Hombre">Hombre</label>
+                        </div>
+                        <div class="sexo__bloque">
+                            <input type="radio" name="sexo" value="mujer" id="mujer" class="inputs">
+                            <label for="mujer">Mujer</label>
+                        </div>
+                        <div class="sexo__bloque">
+                            <input type="radio" name="sexo" value="Otro" id="Otro" class="inputs">
+                            <label for="Otro">Otro</label>
+                        </div>
+                    </section>
+                </fieldset>
+                <!-- Textarea para las dudas -->
+                <textarea class="textarea" name="duda" id="" cols="30" rows="10" placeholder="Expresa tus dudas/preguntas"></textarea>
+                <!-- Contenedor para separar del textarea a los botones -->
+                <div class="botones">
+                    <!-- Botones de enviar y resetear en flex-direction:colum -->
+                    <input type="submit" value="Enviar" class="boton">
+                    <input type="reset" value="Borrar" class="boton">
+                </div>
+            </form>
+        </section>
+    </main>
+
+
+    <footer class="footer flex">
+        <!-- Footer general -->
+    <ul class="footer__list ">
+        <li class="footer__item">Página creada por Alberto López</li>
+        <li class="footer__item">Documentos</li>
+        <li class="footer__item">Información legal</li>
+        <!-- Dos links en el footer -->
+        <li class="footer__item"><a href="pages/consulta.html" class="footer__link">Consulta</a></li>
+        <li class="footer__item">Correo: <a href="mailto:pokemon_albertolopez@gmail.com" class="footer__link">pokemon_albertolopez@gmail.com</a></li>
+    </ul>
+            <!-- Section para un iframe con la ubicación -->
+    <section class="ubicacion">
+        <h2 class="ubicacion__tittle tittles">Ubicación de la tienda</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d783602.1148988216!2d-3.832949827047642!3d39.89784662823473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228f5716d5431%3A0xb019456e1780e333!2sTienda%20de%20Juegos%20-%20PADIS!5e0!3m2!1ses!2ses!4v1645367459431!5m2!1ses!2ses" width="250" height="225" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <div class="footer__imagenes">
+        <!-- Dos imágenes -->
+        <img src="../assets/images/pokemon_logo.png" alt="" class="footer__imagen">
+        <img src="../assets/images/Game_freak_logo.png" alt="" class="footer__imagen">
+    </div>
+</footer>
+</body>
+</html>

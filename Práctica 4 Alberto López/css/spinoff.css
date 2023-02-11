@@ -1,0 +1,42 @@
+/* Separación sirve para el primer article 
+no salga por debajo del header */
+.separacion {
+    margin-top: 100px;
+}
+
+/* Todos los articles del main
+tienen los mismos estilos */
+.article {
+    /* Border a los lados y un poco de padding */
+    border-left: 1px solid #fdce10;
+    border-right: 1px solid 	#fdce10;
+    padding: 10px 20px;
+}
+.article:hover {
+    /* Cuando pasemos por encima ponemos:
+    un borde completo, un color de fondo y una sombra */
+    border: 1px solid #fdce10;
+    background-color: 	#e14318;
+    box-shadow: 0px 0px 20px #fdd70091;
+}
+
+.article__text {
+    /* El texto de los articles justificado */
+    text-align: justify;
+}
+
+.article__footer {
+    /* El footer con un space- around
+    para colocar el flex. */
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.article__imagenes {
+    /* Tamaño contenedores de las imágenes */
+    width: 250px;
+}
+.article__imagen {
+    /* Imágenes ajustadas al ancho del contenedor */
+    width: 100%;
+}

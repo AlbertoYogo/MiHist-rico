@@ -1,0 +1,75 @@
+.section_tabla {
+    /* Separación  con el header*/
+    margin-top: 100px;
+}
+
+.tabla {
+    /* Tabla centrada y con border-collapse */
+    border-collapse: collapse;
+    margin: 0px auto;
+    border: 1px solid #e14318;
+    background-color: 	#ebd452;
+}
+
+.tabla td,
+.tabla th {
+    /* Los td y th con el mismo borde */
+    border: 2px solid #e14318;
+}
+
+.tabla__td--generacion {
+    /* Estilos de las celdas de la izquierda */
+    display: flex;
+    /* Flex en columna para que no salga en una linea */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+}
+.tabla__td--juegos {
+    /* Celdas de las derecha con width y un poco de padding */
+    width: 650px;
+    padding: 2px 10px;
+}
+
+/* Todos los textos de los th tienen estos estilos */
+.tabla th {
+    color: #0e737c;
+    font-size: playfair;
+    font-size: 1.1rem;
+    font-variant: small-caps;
+}
+/* Los textos de los td tienen estos estilos*/
+.tabla td {
+    color: #4A4E4D;
+    font-family: Arimo;
+    font-variant: small-caps;
+}
+
+/* Article del video */
+.video__tittle {
+    /* El título del article subrayado */
+    text-align: center;
+    text-decoration: underline;
+}
+.video__section {
+    /* Sección del article con flex y centrado en horizontal */
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/* El iframe y el div ocupa un 45% */
+.video__yt {
+    width: 45%;
+    margin-right: 10px;
+}
+.video__textos {
+    width: 45%;
+}
+
+.video__text {
+    /* Los dos primeros textos en small-caps */
+    font-variant: small-caps;
+    font-size: 1.15rem;
+}
