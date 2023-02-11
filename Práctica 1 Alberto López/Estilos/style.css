@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "Zen antique";
+    src: url(../Fuentes/ZenAntiqueSoft-Regular.ttf);
+}
+@font-face {
+    font-family: roboto;
+    src: url(../Fuentes/RobotoCondensed-Regular.ttf);
+}
+body {
+    background-image: url("../Imagenes/fondo.jpg");
+    background-size: contain;
+    background-repeat: repeat-x;
+    height: 1000px;
+}
+.gran_contenedor {
+    margin: 0px auto;
+}
+.título {
+   text-align: center;
+   font-family: "Zen antique";
+   font-size: 2rem;
+   border-bottom: 1px solid #2A4BB7;
+   border-top: 1px solid #2A4BB7;
+   padding-bottom: 10px;
+   width:auto;
+   background-color: #FD882F;
+}
+.titulo1 {
+    color: #2A4BB7;
+}
+.titulo2 {
+    color: #FFFF25;
+}
+.titulo3 {
+    color: #D82B2C;
+}
+.imagen_principal {
+    width: 400px;
+    height: 250px;
+}
+.contenedor_imagen {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.links {
+    font-family: "Zen antique";
+    text-align: center;
+    text-decoration: none;
+    color: #2A4BB7;
+}
+.subtítulos {
+    font-family: "Zen antique";
+    font-size: 1.5rem;
+}
+.texto {
+    font-family: roboto;
+    font-size: 1.25rem;
+    text-align: justify;
+}
+.links_tipos {
+    font-family: "Zen antique";
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+}
