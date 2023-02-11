@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merchanshop</title>
+    <link rel="stylesheet" href="../styles/general.css">
+    <link rel="stylesheet" href="../styles/ayuda.css">
+    <link rel="icon" href="../assets/images/tienda.png">
+</head>
+<body>
+    <!-- Contenedor para el ancho -->
+    <div class="gran_contenedor">
+        <!-- Cabecera formada por el menú -->
+    <header>
+        <nav class="menu"> 
+            <a href="../index.html" class="link_menu">
+                <img src="../assets/images/Menú/inicio.png" class="imagen_menu">
+                <span class="span_menu"> Inicio </span>
+            </a>
+            <a href="posters.html" class="link_menu">
+                <img src="../assets/images/Menú/poster.png" class="imagen_menu">
+                <span class="span_menu"> Posters </span>
+            </a>
+            <a href="figuras.html" class="link_menu">
+                <img src="../assets/images/Menú/figura.png" class="imagen_menu">
+                <span class="span_menu"> Figuras </span>
+            </a>
+            <a href="ropa.html" class="link_menu">
+                <img src="../assets/images/Menú/ropa.png" class="imagen_menu">
+                <span class="span_menu"> Ropa </span>
+            </a>
+            <a href="cartas.html" class="link_menu">
+                <img src="../assets/images/Menú/cartas.png" class="imagen_menu">
+                <span class="span_menu"> Cartas </span>
+            </a>
+            <a href="ayuda.html" class="link_menu">
+                <img src="../assets/images/Menú/ayuda.png" class="imagen_menu">
+                <span class="span_menu"> Ayuda </span>
+            </a>
+        </nav>
+    </header>
+    <!-- Main formado por un formulario -->
+    <main>
+        <!-- Formulario -->
+        <form action="destino.html" method="get" class="formulario">
+            <!-- Primer fieldset para datos personales, situado a la izquierda -->
+            <fieldset class="fieldset_general fieldset_datos">
+                <legend>Datos personales</legend>
+                <!-- Contenedores para separar labels e inputs -->
+                <div class="cont_label_input">
+                    <label for="" class="label_input_datos label_datos texto">Nombre</label>
+                    <label for="" class="label_input_datos label_datos texto">Fecha de nacimiento: </label>
+                    <label for="" class="label_input_datos label_datos texto">DNI</label>
+                    <label for="" class="label_input_datos label_datos texto">País</label>
+                    <label for="" class="label_input_datos label_datos texto">Edad</label>
+                    <label for="" class="label_input_datos label_datos texto">Correo</label>
+                </div>
+                <div class="cont_label_input">
+                    <!-- Input text para nombre -->
+                    <input type="text" name="nombre" placeholder="Nombre" class="label_input_datos input_datos" required autofocus> 
+                    <!-- Input date para fecha de nacimiento -->
+                    <input type="date" name="nacimiento" class="label_input_datos input_datos">
+                    <!-- Input text para dni con una longitud máxima de 9 -->
+                    <input type="text" maxlength="9" name="DNI" class="label_input_datos input_datos" required>
+                    <!-- Select para los países disponibles en la tienda -->
+                    <select name="País" id="" class="label_input_datos input_datos ">
+                        <option value=""></option>
+                        <option value="España">España</option>
+                        <option value="Portugal">Portugal</option>
+                        <option value="Francia">Francia</option>
+                    </select>
+                    <!-- Contenedor para el input de edad -->
+                    <div>
+                    <label for="" class="edad">0</label>
+                    <input type="range" name="edad" id="" min="1" max="99" class="label_input_datos input_datos edad">
+                    <label for="" class="edad">99</label>
+                    </div>
+                    <!-- Input de correo con placeholder -->
+                    <input type="email" name="correo" id="" class="label_input_datos input_datos" placeholder="ejemplo@correo.com" required>
+                </div>
+            </fieldset>
+            <!-- Contenedor para los fieldsets de radio y checkbox -->
+            <div class="fieldset_opciones">
+            <fieldset class="fieldset_general">
+                <!-- Fieldset de inputs:radio para el sexo de la persona que relleno el formulario -->
+                <legend>Sexo</legend>
+                <div>
+                    <input type="radio" name="sexo" id="Hombre" value="Hombre">
+                    <label for="Hombre" class="texto">Hombre</label>
+                </div>
+                <div>
+                    <input type="radio" name="sexo" id="Mujer" value="Mujer">
+                    <label for="Mujer" class="texto">Mujer</label>
+                </div>
+                <div>
+                    <input type="radio" name="sexo" id="Otro" value="Otro">
+                    <label for="Otro" class="texto">Otro</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="fieldset_general">
+                <!-- Fieldset con checbox para saber sobre que va relacionada la cuestión -->
+                <legend>Sobre</legend>
+                <div>
+                    <input type="checkbox" id="Posters" name="sobre1" value="posters">
+                    <label for="Posters" class="texto">Posters</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Figuras" value="Figuras" name="sobre2">
+                    <label for="Figuras" class="texto">Figuras</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Ropa" value="Ropa" name="sobre3">
+                    <label for="Ropa" class="texto">Ropa</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Cartas" value="Cartas" name="sobre4">
+                    <label for="Cartas" class="texto">Cartas</label>
+                </div>
+            </fieldset>
+            </div>
+            <!-- Textarea para que pueda rellenar con su duda/pregunta -->
+            <textarea name="" id="" cols="30" rows="12"></textarea>
+            <div class="botones">
+                <!-- Dos botones en un contenedor, el de enviar y el de borrar -->
+            <input type="submit" value="Enviar" class="boton_enviar">
+            <input type="reset" value="Borrar" class="boton_borrar">
+            </div>
+        </form>
+        <!-- Mapa -->
+        <section class="map_section">
+            <h2 class="map_tittle">Ubicación</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d231241.89848820117!2d-3.7784020141937544!3d40.402452435855665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4221e3b966e943%3A0xc815b71ab566d084!2sGoodies%20Merchandising!5e0!3m2!1ses!2ses!4v1639417785095!5m2!1ses!2ses" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+    </main>
+
+    </div>
+
+    <!-- El footer de siempre -->
+    <footer class="footer">
+        <p class="telefono"> Teléfono de atención al cliente: <strong>634 89 32 44 </strong> </p>
+        <ul class="lista_footer">
+            <li> Información legal </li>
+            <li> Política de privacidad </li>
+            <li> Política de cookies </li>
+            <li> Condiciones legales </li>
+        </ul>
+    </footer>
+</body>
+</html>

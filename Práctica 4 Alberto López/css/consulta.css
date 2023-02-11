@@ -1,0 +1,114 @@
+/* Vídeo de fondo */
+.visor__video {
+    /* Absolute para que esté de fondo */
+    position: absolute;
+    width: 100%;
+    top: 75px;
+    z-index: -100;
+}
+
+
+.formulario {
+    /* Todo el section centrado */
+    text-align: center;
+        /* Separación del header */
+    margin-top: 100px;
+    width: 100%;
+    font-weight: bold;
+    color: #0E9AA7;
+    font-family: Arimo;
+}
+.fieldset {
+    /* Border de los fieldset */
+    border: 1px solid #e14318;
+}
+
+
+/* Primer section */
+.nombre_apellidos {
+    justify-content: center;
+} 
+.nombre_apellidos__bloque {
+    width: 47%;
+}
+.nombre_apellidos__input {
+    width: 450px;
+    margin: 0px 5px;
+}
+
+/* Segundo y tercer section */
+.resto {
+    /* Más granders */
+    width: 90%;
+    margin: 0px auto;
+}
+.resto__input {
+    /* Separación con el primer section y entre ellos */
+    margin-top: 15px;
+    width: 950px;
+}
+
+.sexo {
+    /* section del segundo fieldset: todo centrado */
+    justify-content: center;
+    align-items: center;
+}
+.sexo__bloque {
+    /* Separación entre los bloque del segundo fieldset */
+    margin: 0px 15px;
+
+}
+
+.textarea {
+    /* Estilos del textarea */
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 10px;
+}
+
+/* Estilos para los inputs */
+.inputs,
+textarea {
+    border: 0px;
+    border-top: 2px solid #0E9AA7;
+    border-bottom: 2px solid #0E9AA7;
+}
+/* Estilos inputs cuando estamos encima */
+.inputs:focus,
+textarea:focus {
+    outline: 0px;
+    font-size: 1.05rem;
+    border: 2px solid #0E9AA7;
+    color: #e14318;
+}
+
+/* Contenedor del submit y reset */
+.botones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Estilos de cada botón */
+.boton {
+    width: 80%;
+    margin: 5px 0px;
+    background-color: #e14318;
+    /* Bordes: arriba e izquierda distinto a abajo y derecha */
+    border: 1px solid 	#ee8328;
+    border-bottom: 1px solid #eedd7a;
+    border-right: 1px solid #eedd7a; 
+        /* Rodeo bordes */
+    border-radius: 5px;
+    /* Color, tamaño y colocación del texto */
+    color: #FDCE10;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* Para cuando pasar por encima */
+.boton:hover {
+    background-color: #ee8328;
+    color: #0E9AA7;
+}
+
+

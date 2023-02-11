@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aves</title>
+    <link rel="stylesheet" href="estilos/general.css">
+    <link rel="stylesheet" href="estilos/style.css">
+    <!-- Link para el favicon de la página. -->
+    <link rel="icon" href="assets/imágenes/icono.png">
+</head>
+<body>
+    <!-- Contenedor de toda la página para darla un ancho y un margin: 0px auto -->
+    <div class="gran_contenedor">
+    
+    <!-- Header que contiene el título de la página, el menú y una imagen -->
+    <header>
+        <h1 class="título"> Aves </h1>
+        <div class="contenedor_menú">
+        <nav class="menú"> <a href="pages/rapaces.html" class="links"> Rapaces </a> <a href="pages/pájaros.html" class="links"> Pájaros </a> <a href="pages/corredoras.html" class="links"> Corredoras</a> <a href="pages/tipos.html" class="links"> Tipos </a> </nav>
+        </div>
+        <div class="contenedor_imagen_uno">
+            <img src="assets/imágenes/principal.jog.jpg">
+        </div>
+    </header> 
+    
+    <main>
+        <!-- Dos secciones siguiendo el mismo estilo: un título con imagen y texto -->
+        <section>
+            <h2 class="subtítulos"> ¿Qué son? </h2>
+                <img src="assets/imágenes/ave1.jpg" alt="" class="imagen_dos">
+                <!-- La clase particular significa que son los estilos particulares de esta página -->
+                <span class="particular">
+                <p class="texto particular"> Las aves son animales vertebrados de sangre caliente, con el cuerpo 
+                    cubierto de plumas, tetrápodos, es decir tienen 4 extremidades, 
+                    dos patas y dos alas, capacidad para volar (aunque no todas vuelan, 
+                    por ejemplo el pingüino) y pueden regular su temperatura corporal,. </p>
+                <p class="texto particular"> Son los únicos vertebrados que vuelan, excepto los murciélagos, 
+                    los pingüinos, el kiwi, el ñandú y el emú. </p>
+                <p class="texto particular"> Todas las aves tienen algo en común, y es que todas tienen Plumas. </p>
+                </span>
+        </section>
+        <section>
+            <h2 class="subtítulos"> Origen y evolución. </h2>
+                <div class="contenedor_imagen_tres">
+                    <img src="assets/imágenes/evolución.jpg" alt="" class="imagen_tres">
+                </div>
+                <span class="particular">
+                <p class="texto particular"> La teoría más aceptada por los científicos es que las aves son dinosaurios evolucionados, 
+                    más precisamente una evolución de los terópodos (saurisquios carnívoros) 
+                    tetanuros (colas rígidas) manirraptores. </p>
+                <p class="texto particular"> Estos eran pequeños animales no más grandes que una persona, muy estilizados y perfeccionados 
+                    para la caza en velocidad y en grupo como. </p>
+                </span>
+        </section>
+    </main>
+
+    <!-- Footer sencillo para dudas -->
+    <!-- La clase "separación" es para poner un margin y alejar el footer de la imagen tres -->
+    <footer class="footer separación">
+        <p class="texto footer_text"> Cualquier duda contacta con <a href="mailto:aves@gmail.com" class="correo"> aves@gmail.com </a> </p>
+    </footer>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FC Barcelona</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- Mis estilos -->
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="icon" href="assets/images/FC-Barcelona-icon.png">
+
+</head>
+<body>
+    <!-- Header con un menú y una img -->
+    <header class="container-fluid pb-3 fondo-azul cabecera">
+        <section class="row justify-content-between align-items-center">
+            <div class="col-5">
+                <nav class="navbar navbar-expand-lg navbar-light menu">
+                    <div class="container-fluid">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                          <li class="nav-item me-3">
+                            <a class=" menu__link menu__link--activo fs-5" aria-current="page" href="index.html">Inicio</a>
+                          </li>
+                          <li class="nav-item me-3">
+                            <a class=" menu__link fs-5" href="pages/estadisticas.html">Estadísticas</a>
+                          </li>
+                          <li class="nav-item me-3">
+                            <a class=" menu__link fs-5" href="pages/jugadores.html">Jugadores</a>
+                          </li>
+                          <li class="nav-item me-3 dropdown">
+                            <a class=" menu__link fs-5 dropdown-toggle" href="pages/secciones.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Secciones
+                            </a>
+                            <ul class="dropdown-menu fondo-azul aria-labelledby="navbarDropdownMenuLink">
+                              <li><a class="dropdown-item menu__link" href="pages/secciones.html#fútbol">Fútbol</a></li>
+                              <li><a class="dropdown-item menu__link" href="pages/secciones.html#baloncesto">Baloncesto</a></li>
+                              <li><a class="dropdown-item menu__link" href="pages/secciones.html#balonmano">Balonmano</a></li>
+                              <li><a class="dropdown-item menu__link" href="pages/secciones.html#hockey">Hockey</a></li>
+                              <li><a class="dropdown-item menu__link" href="pages/secciones.html#sala">Fútbol sala</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item me-3">
+                            <a class=" menu__link fs-5" href="pages/registrarse.html">Registrarse</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+            <div class="col-1 d-none d-md-block">
+                <!-- Imagen fluid que aparece desde md -->
+                <img src="assets/images/FC-Barcelona-icon.png" class="img-fluid" alt="">
+            </div>
+        </section>
+    </header>
+    
+    <main class="container">
+        <!-- Main con dos secciones -->
+        <section class="carousel row justify-content-center mt-3">
+            <!-- Primera sección basada en un carousel con 5 imágenes -->
+            <div id="carouselExampleIndicators" class="carousel slide col-8 d-none d-sm-block" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="7500">
+                    <img src="assets/images/carousel 1.jpg" class="d-block w-100  img-fluid">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="7500">
+                    <img src="assets/images/carousel 2.jpg" class="d-block  w-100 img-fluid">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="7500">
+                    <img src="assets/images/carousel 3.jpg" class="d-block  w-100 img-fluid">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="7500">
+                    <img src="assets/images/carousel 4.jpg" class="d-block  w-100 img-fluid">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="7500">
+                    <img src="assets/images/carousel 5.jpg" class="d-block  w-100 img-fluid">
+                  </div>
+                </div>
+              </div>
+        </section>
+
+        <section class="accordion row gx-3 mt-4">
+            <!-- Segunda sección con una imagen y un accordion -->
+            <div class="d-none d-md-block col-md-5 col-lg-4">
+                <!-- Img que aparece desde md -->
+                <img src="assets/images/camiseta_europa.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-12 col-md-7 col-lg-8">
+                <!-- Accordion con 4 zonas -->
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item fondo-azul">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button fondo-rojo fuente_serifa" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          FC Barcelona
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <p class="color-texto fuente_sans-serif">El Fútbol Club Barcelona (en catalán, Futbol Club Barcelona), conocido popularmente como Barça, es una entidad polideportiva con sede en Barcelona, España. Fue fundado como club de fútbol el 29 de noviembre de 1899 y registrado oficialmente el 5 de enero de 1903.7​8​9​ Es uno de los cuatro clubes profesionales de España junto a Real Madrid Club de Fútbol, Athletic Club y Club Atlético Osasuna que no es sociedad anónima deportiva (S. A. D.), de manera que la propiedad del club recae en sus socios.</p>
+                          <p class="color-texto fuente_sans-serif">Tanto el club como sus hinchas reciben el apelativo de «culers» (pronunciado culés), y también, en referencia a sus colores, «azulgranas» o «blaugranas», tal como aparece en su himno, el «cant del Barça», el cual en su segunda línea menciona «som la gent blaugrana» (en castellano, «somos la gente azulgrana»). A nivel institucional tiene a su servicio, para atender a socios, simpatizantes y público en general, la Oficina de Atención al Barcelonista, donde quien lo solicita es atendido en los idiomas oficiales del club, que son el catalán, el castellano y el inglés.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item fondo-azul">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button  collapsed fondo-rojo fuente_serifa" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Palmares histórico
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <p class="color-texto fuente_sans-serif">El Fútbol Club Barcelona es una de las instituciones más laureadas a nivel mundial, totalizando en sus más de ciento diez años de historia un total de ciento veintiocho títulos oficiales regionales, nacionales e internacionales, lo que le sitúa como el —«club español con más títulos oficiales»—. Entre ellos destacan por importancia, cinco Ligas de Campeones, cinco Supercopas de la UEFA, cuatro Recopas de Europa, tres Copas de Ferias, dos Copas Latinas, y tres Copas Mundiales de Clubes, sumando veintidós títulos internacionales oficiales convirtiéndolo en el segundo club europeo y del mundo más laureado. En competiciones nacionales posee el récord de trofeos con setenta y cuatro, desglosados entre veintiséis Ligas, treinta Copas de España, diecisiete Supercopas de España y dos Copas de la Liga. En cuanto a títulos de su comunidad autónoma cuenta con veintitrés Campeonatos de Cataluña, siete Copas de Cataluña y dos Supercopas de Cataluña.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item fondo-azul">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button  collapsed fondo-rojo fuente_serifa" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Fútbolistas más importantes de su historia
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                         <p class="color-texto fuente_sans-serif">Cinco jugadores del club fueron galardonados con el premio de Jugador Mundial de la FIFA que los acreditaba como los mejores futbolistas del mundo: Romário, Ronaldo, Rivaldo, Ronaldinho en dos ocasiones consecutivas, y Lionel Messi; y seis fueron premiados con el Balón de Oro que los acreditaba como los mejores jugadores del fútbol europeo: Luis Suárez, Johan Cruyff en tres ocasiones, Hristo Stoichkov, Rivaldo, Ronaldinho y Messi que hizo historia en el club al ser el primer canterano en conseguirlo. Hasta en veinte ocasiones, un jugador del club ha obtenido el Balón de Oro, Plata o Bronce, además de otras cuatro ocasiones en las que un jugador ha obtenido uno de estos galardones habiendo disputado la primera parte de ese año en el club azulgrana; Ronaldo en 1997 y siendo jugador del Inter de Milán, y Luís Figo en 2000 perteneciendo al Real Madrid. Además, el club ha contado con jugadores poseedores de otras grandes distinciones internacionales como Andrés Iniesta, Xavi Hernández, Michael Laudrup, Samuel Eto'o, Allan Simonsen, Hansi Krankl, Diego Maradona, Gary Lineker o Zlatan Ibrahimović entre otros.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item fondo-azul">
+                        <h2 class="accordion-header" id="headingThree">
+                          <button class="accordion-button  collapsed fondo-rojo fuente_serifa" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourth" aria-expanded="false" aria-controls="collapseFourth">
+                            Entrenadores
+                          </button>
+                        </h2>
+                        <div id="collapseFourth" class="accordion-collapse collapse" aria-labelledby="headingFourth" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <p class="color-texto fuente_sans-serif">El F. C. Barcelona ha tenido, contando a su actual técnico, un total de 60 entrenadores de fútbol a lo largo de su historia. El primer entrenador que tuvo el club fue el inglés Billy Lambe, que dirigió al equipo de enero a septiembre de 1912, ejerciendo tanto de jugador como de entrenador. Anteriormente, el club no tenía entrenador. Era práctica habitual en los equipos de fútbol que, hasta principios de los años 1910, la plantilla fuese confeccionada por el presidente y la junta directiva, que decidían los fichajes, los traspasos y, en la mayoría de los casos, las alineaciones de los partidos. Los entrenamientos, que en aquella época eran pocos pues el fútbol no era profesional, solían autogestionarlos los propios jugadores.</p>
+                            <p class="color-texto fuente_sans-serif">Como Billy Lambe, la mayoría de entrenadores que ha tenido el F. C. Barcelona han sido extranjeros. De los 60 entrenadores del club, 28 han sido españoles (16 de ellos catalanes). En la mayoría de los casos, los entrenadores españoles han sido exjugadores del club que accedieron al cargo tras el cese del entrenador titular. Tan solo se han dado siete casos de entrenadores españoles que no hubiesen vestido previamente la camiseta del club como jugador: Enric Rabassa, Enrique Orizaola, Vicente Sasot, Laureano Ruiz, Luis Aragonés, Lorenzo Serra Ferrer y Quique Setién.</p>
+                            <p class="color-texto fuente_sans-serif">El actual entrenador es Xavi Hernández, exfutolista del club y considerado una leyenda por su afición</p>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="container-fluid mt-5 pb-4 fondo-azul footer">
+        <!-- Footer con dos secciones -->
+        <section class="row justify-content-between justify-content-sm-around">
+            <!-- Primera sección divida en 3 partes desde sm y anterior en 2 partes -->
+            <div class="col-5 col-sm-3">
+                <img src="assets/images/FC-Barcelona-icon.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-5 col-sm-3 pt-4">
+                <h2 class="footer__tittle">Noticias</h2>
+                <ul class="footer__list ps-0">
+                    <li class="footer__item"><a href="#" class="footer__link color-texto">- La racha de invictos del fútbol</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link color-texto">- Lideres de la euroleague</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link color-texto">- Clasificados a los playoff de lol</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link color-texto">- Campeones de copa en fútbol sala</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link color-texto">- Eintracht es el rival de la Europa League</a></li>
+                </ul>
+            </div>
+            <div class=" col-sm-3 d-none d-sm-block">
+                <h2 class="footer__tittle">Camp Nou</h2>
+                <img src="assets/images/Camp nou.jpg" class="img-fluid" alt="">
+            </div>
+        </section>
+        <section class="row w-75 mt-4 pt-4 border-top-1 mx-auto justify-content-around justify-content-md-center redes-sociales">
+            <!-- Sección con dos partes que son Twitter e instagram -->
+            <div class="col-4 col-lg-2 color-texto">
+                <i class="bi bi-twitter"></i>
+                <span>@fcbarcelona_es</span>
+            </div>
+            <div class="col-4 col-lg-2 color-texto">
+                <i class="bi bi-instagram"></i>
+                <span>FCBarcelona</span>
+            </div>
+        </section>
+    </footer>
+
+
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>

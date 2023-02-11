@@ -1,0 +1,145 @@
+/* Border box */
+* {
+    box-sizing: border-box;
+}
+/* Color fondo y quitamos margin */
+body {
+    margin: 0px;
+    background-color: #ee8328;
+}
+
+/* font face */
+    /* Las dos fuentes principales de la página */
+@font-face {
+    /* Sans serif */
+    font-family: Arimo;
+    src: url(../assets/fonts/Arimo-VariableFont_wght.ttf);
+}
+@font-face {
+    /* Serifa */
+    font-family: playfair;
+    src: url(../assets/fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+/* Estilo flex para reusar siempre que haya display:flex */
+.flex {
+    display: flex;
+}
+/* Header */
+    /* Colocamos lo de dentro (flex) */
+.header__menu {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /*Que aparezca fijado arriba*/
+    /* Posición: arriba del todo */
+    top: 0px;
+    background-color:#e14318;
+    /* Que nada tape los links */
+    z-index: 1000;
+    padding: 10px 20px;
+}
+
+.header__list {
+    width: 600px;
+    justify-content: space-around;
+    /* Quitamos los puntos de la lista */
+    list-style: none;
+}
+.header__img {
+    width: 100px;
+}
+
+.header__link {
+    /* Los convertimos en bloque para que funcionen como un botón */
+    display: block;
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: 	#FDCE10;
+    padding-right: 22px;
+    border-right: 1px solid #FDCE10;
+    font-family: playfair;
+}
+
+.header__link--final {
+    /* Para quitar su border-right */
+    border-right: 0px;
+}
+
+.header__link:hover {
+    color: 	#207394;
+}
+/* Estilos para la página en la que estamos */
+.header__link--active {
+    color: 	#207394;
+}
+.header__link--active:hover {
+    color: #FDCE10;
+}
+
+/* Todos los main tienen el mismo ancho y se centran */
+.main {
+    width: 80%;
+    margin: 0px auto;
+}
+
+
+/* Footer */
+    /* Footer con la posición del flex */
+.footer {
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 150px;
+    background-color: #e14318;
+    border-top: 1px solid #eedd7a;
+    padding-bottom: 7px;
+}
+
+.footer__imagenes {
+    /* Ancho contenedor footer */
+    width: 200px;
+}
+.footer__imagen {
+    width: 100%;
+}
+
+
+.footer__list {
+    /* Quitamos los puntos de la lista */
+    list-style: none;
+}
+
+.footer__item {
+    color: #eedd7a;
+    padding: 5px 0px;
+    font-size: 1.1rem;
+    font-family: Arimo;
+}
+.footer__link {
+    color: #eedd7a;
+    text-decoration: none;
+    font-family: Arimo;
+}
+.footer__link:hover {
+    color: #207394;
+}
+
+/* Estilos del section ubicacion */
+.ubicacion {
+    text-align: center;
+}
+.ubicacion__tittle {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Estilos generales para textos y títulos */
+.tittles {
+    color: #0E9AA7;
+    font-size: playfair;
+}
+.texts {
+    color: #4A4E4D;
+    font-family: Arimo;
+}
+

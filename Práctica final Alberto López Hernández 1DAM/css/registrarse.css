@@ -1,0 +1,115 @@
+.main {
+    width: 70%;
+    /* Centramos el contenio del main */
+    margin: 0px auto;
+}
+.seccion_formulario {
+    /* El section posee un fondo, boder, padding, etc. 
+    a modo de marco */
+    margin-top: 30px;
+    text-align: center;
+    padding: 20px;
+    background-color: #DA1F26;
+    border: 2px solid #4CA1F4;
+    border-radius: 10px;
+}
+.formularios__bloques {
+    /* Estilo para cada div con un input y un labek */
+    width: 80%;
+    margin: 10px auto;
+}
+
+.formulario__doble {
+    /* Estilos para los dos div (label e input) juntos en una línea */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.formulario__label {
+    /* Fuente, color, tamaño de cada label */
+    font-family: 'BIZ UDPMincho';
+    margin-right: 15px;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.formulario__input {
+    /* Todos los estilos de los input */
+    width: 100%;
+    margin-top: 5px;
+    /* Redondeamos los bordes */
+    border-radius: 6px;
+    outline: 0px;
+    border: 2px solid #0368cc;
+    background-color: rgb(15, 3, 57);
+    padding: 3px;
+    /* Fuente sans serif */
+    font-family: Inter;
+    color: #DA1F26;
+}
+.formulario__input:focus {
+    /* Cuando el input este focus aumentamos el tamaño de la fuente
+    y cambiamos el color de los bordes */
+    border: 2px solid black;
+    font-size: 1.2rem;
+}
+.formulario__input::placeholder {
+    /* Estilos de los placeholder */
+    /* Fuente sans serif */
+    font-family: Inter;
+    color: #DA1F26;
+}
+
+.formulario__input--doble {
+    width: 80%; 
+}
+.formularios__bloques--dobles {
+    /* Distintos estilos para el div que contiene dos div de input y label */
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario__botones {
+    /* Contenedor de los botones submit y reset */
+    display: flex;
+    justify-content: space-around;
+}
+.formulario__boton {
+    /* Estilos comunes del submit y del reset */
+    /* Tamaños, posición y fuente principalmente */
+    margin: 2px 4px;
+    margin-top: 10px;
+    width: 100%;
+    font-family: 'BIZ UDPMincho';
+    font-size: 1.25rem;
+    padding: 5px;
+    border-radius: 10px;
+    outline: 0px;
+}
+/* Distinto color y border en el reset y en el submit */
+.formulario__boton--reset {
+    background-color: #2196F3;
+    border: 2px solid #eca100;
+}
+.formulario__boton--enviar {
+    background-color: #FF3916;
+    border: 2px solid #0368cc;
+}
+
+.formulario__boton:hover {
+    /* Mismo fondo, borde y color de la fuente
+    al pasar el ratón en los botones */
+    background-color: rgb(15, 3, 57);
+    border: 2px solid black;
+    color: white;
+}
+
+.Rellenar {
+    /* Estilos para los <p> que aparecen en los campos obligatorios */
+    color: #a8a8a8;
+    font-family: 'BIZ UDPMincho';
+    font-size: 1.2rem;
+}

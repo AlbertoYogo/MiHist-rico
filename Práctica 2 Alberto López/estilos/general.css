@@ -1,0 +1,72 @@
+/* Declaración de las dos fuentes que se van a usar en la página */
+@font-face {
+    /* Fuente serif */
+    font-family: caveat;
+    src: url(../assets/fuentes/Caveat-VariableFont_wght.ttf);
+}
+@font-face {
+    /* Fuente sans serif */
+    font-family: frutiger;
+    src: url(../assets/fuentes/frutiger.ttf);
+}
+
+/* Contenedor general de todas las páginas ocupando toda la página. */
+.gran_contenedor {
+    width: 1000px;
+    margin: 0px auto; 
+}
+/* Título que sigue el estilo general en todas las páginas */
+.título {
+    font-size: 3rem;
+    margin-left: 10px;
+    padding: 10px;
+    border-top: 1px dashed #5B222A; 
+    border-bottom: 1px dashed #5B222A;
+    font-family: caveat;  
+    color: #733445; 
+}
+/* Características generales de los textos de las páginas */
+.texto {
+    font-family: frutiger;
+    text-align: justify;
+}
+/* footer con su border arriba y abajo*/
+.footer {
+    border-top: 1px solid #5B222A;
+    border-bottom: 1px solid #5B222A;
+    padding: 5px;
+    /* Margin bottom para dejar un poco de aire debajo del footer. */
+    margin-bottom: 50px;
+}
+.footer_text {
+    text-align: right;
+}
+/* estilos de los links del menú y cuando pasas el ratón por encima */
+.links {
+    text-decoration: none;
+    color: #733445;
+    font-size: 1.5rem;
+    margin-left: 50px;
+}
+.links:hover {
+    background-color: #73344596;
+    color: #c7898a;
+    padding: 10px
+}
+/* Menú principal */
+.menú {
+    background-color: #c7898aa1;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 0.5rem;
+}
+.contenedor_menú {
+    text-align: center;
+    margin: 0px 100px;
+}
+/* Estilos para el correo del footer (principalmente cambiar el color y quitar el subrayado) */
+.correo {
+    color: #733445;
+    text-decoration: none;
+    font-size: 1.5rem;
+}

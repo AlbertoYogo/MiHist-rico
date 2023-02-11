@@ -1,0 +1,109 @@
+@font-face {
+    font-family: "Zen antique";
+    src: url(../Fuentes/ZenAntiqueSoft-Regular.ttf);
+}
+@font-face {
+    font-family: roboto;
+    src: url(../Fuentes/RobotoCondensed-Regular.ttf);
+}
+body {
+    background-color: rgb(201, 201, 201);
+}
+.gran_contenedor {
+    width: 1200px;
+    margin: 0px auto;
+}
+.título {
+    text-align: center;
+    font-family: "Zen antique";
+    font-size: 2rem;
+    border-bottom: 1px solid #2A4BB7;
+    border-top: 1px solid #2A4BB7;
+    padding-bottom: 10px;
+    width:auto;
+    background-color: #FD882F;
+    color: #D82B2C;
+}
+.links {
+    font-family: "Zen antique";
+    text-align: center;
+    text-decoration: none;
+    color: #2A4BB7;
+}
+.texto {
+    font-family: roboto;
+    font-size: 1.25rem;
+    text-align: justify;
+    display: inline-block;
+    margin: 2px 5px;
+}
+.contenedor_imágenes {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+}
+.subtipos {
+    font-family: "Zen antique";
+    font-size: 1.5rem;
+    margin-left: 5px;
+}
+.sección_uno {
+    background-color: #BC0723;
+    margin: 40px 0px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.sección_dos {
+    background-color: #0096D2;
+    margin-bottom: 40px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.sección_tres {
+    background-color: #F7CE00;
+    margin-bottom: 40px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.imagen_uno {
+    width: 200px;
+    height: 200px;
+}
+.imagen_dos {
+    width: 200px;
+    height: 250px;
+}
+.imagen_tres {
+    width: 200px;
+    height: 200px;
+}
+.imagen_cuatro {
+    width: 200px;
+    height: 250px;
+}
+.imagen_cinco {
+    width: 200px;
+    height: 250px;
+}
+.imagen_seis {
+    width: 200px;
+    height: 250px;
+}
+.imagen_siete {
+    width: 300px;
+    height: 300px;
+}
+.imagen_ocho {
+    width: 200px;
+    height: 300px;
+}
+.imagen_nueve {
+    width: 300px;
+    height: 300px;
+}
+.footer  {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}

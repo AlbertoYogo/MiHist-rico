@@ -1,0 +1,106 @@
+/* Imagen header */
+.header_pokemons {
+    position: relative;
+    top: 100px;
+    background:  linear-gradient(to right, rgba(225, 68, 24, 0.733) 0%, rgba(225, 68, 24, 0.678) 13%, rgba(238, 132, 40, 0.37) 100%), url(../assets/images/pokemons_inicio.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 300px;
+    margin: 0px auto;
+}
+
+/* Secciones main */
+.pokemon {
+   margin-top: 150px; 
+}
+/* .main__tittle {
+    color: #0E9AA7;
+    font-size: playfair;
+}
+.pokemon__text {
+    color: #4A4E4D;
+    font-family: Arimo;
+} */
+.pokemon__img {
+    width: 150px;
+    height: 125px;
+    margin: 0px 5px;
+}
+.pokemon__span {
+    font-weight: bold;
+}
+
+
+/* Estilos de las cartas */
+.cards {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card {
+    width: 30%;
+    height: 290px;
+    padding: 5px 10px;
+    /* Aire entre cartas */
+    margin: 10px;
+    background-color: #e14318;
+    text-align: center;
+    /* Redondeo el borde */
+    border-radius: 5%;
+}
+.card__img {
+    /* width: 300px; */
+    width: 100%;
+    max-height: 225px;
+    border-radius: 3%;
+}
+.card__text {
+    font-family: Arimo;
+    font-size: 1.2rem;
+}
+
+/* Color distinto del texto según el pokemon */
+/* Y de la sombra de la caja */
+.card__text--pikachu {
+    color: #FECE46;
+}
+.card--pikachu {
+    box-shadow: 1px 1px 10px #fdce10;
+}
+
+.card__text--charizard {
+    color: #F3D3A0;
+}
+.card--charizard {
+    box-shadow: 1px 1px 10px #F3D3A0;
+}
+
+.card__text--squirtle {
+    color: #6C949D;
+}
+.card--squirtle {
+    box-shadow: 1px 1px 10px #6C949D;
+}
+
+
+.card__text--jiglypuff {
+    color: #FF40FF;
+}
+.card--jiglypuff {
+    box-shadow: 1px 1px 10px #FF40FF;
+}
+
+.card__text--eevee {
+    color: #D08956;
+}
+.card--eevee {
+    box-shadow: 1px 1px 10px #D08956;
+}
+
+.card__text--gengar {
+    color: #785B98;
+}
+.card--gengar {
+    box-shadow: 1px 1px 10px #785B98;
+}

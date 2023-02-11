@@ -1,0 +1,29 @@
+/* Las tres clases para hacer la galeria */
+.marco {  /* El marco exterior.*/
+    width: 250px;
+    height: 125px;
+    background-color: #8F726A;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 10px 50px 10px;
+    border: 1px solid #733445;
+    border-bottom: 1px solid #c7898a;
+    border-right: 1px solid #c7898a;
+    margin: 10px;
+}
+.foto { /* La foto de dentro de cada marco*/
+    width: 100%;
+    height: 100%;
+}
+.nombre { /* El texto de dentro de cada marco*/
+   text-align: right; 
+   font-family: caveat;
+   color: #2C4250;
+   font-variant: small-caps;
+   font-size: 1.4rem;
+   vertical-align: top;
+   line-height: 0px;
+}
+.galeria { /* Clase a la sección para centrar las imágenes*/
+    text-align: center;
+}

@@ -1,0 +1,71 @@
+.main {
+    /* Centrado el main */
+    margin: 0px auto;
+}
+/* Todos los estilos son de la única sección del main */
+.momentos {
+/* Colores, colocación, display:flex y sombra */
+    display: flex;
+    justify-content: space-between;
+    margin: 0px auto;
+    margin-top: 40px;
+    width: 75%;
+    background-color: #DA1F26;
+    border: 3px solid #4CA1F4;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.616);
+}
+.momentos:hover {
+    box-shadow: 0px 0px 0px;
+}
+.momentos__botones {
+    /* div de los buttons */
+    margin: 0px auto;
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.momentos__boton {
+    /* Cada botón con sus estilos de colores y fuente */
+    width: 100%;
+    background-color: black;
+    color: #C01F25;
+    padding: 3px;
+    border-radius: 8px; 
+    font-family: 'BIZ UDPMincho';
+}
+.momentos__boton:hover {
+    /* Al pasar el ratón por los botones */
+    color: rgb(246, 173, 38);
+    background-color: #9FA3AC;
+}
+
+.momentos__ancho {
+    /* Tamaño fijo para que no se desproporcione con la posición del texto */
+    width: 662px;
+    height: 373px;
+}
+.momentos__imagen {
+    /* La imagen se adapta al tamaño del contenedor */
+    width: 100%;
+    height: 100%;
+    /* Imagen relative para poder poner encima el texto */
+    position: relative;
+    border: 1px solid black;
+}
+.momentos__texto {
+    /* Ajustes del estilo para el fondo transparente, su posición sobre la imagen y la fuente */
+    position: absolute;
+    text-align: justify;
+    font-family: Inter;
+    width: 630px;
+    margin-left: 15px;
+    padding: 8px;
+    top: 320px;
+    color: white;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.505);
+}

@@ -1,0 +1,89 @@
+* {
+    /* Importante el border-box */
+    box-sizing: border-box;
+    margin: 0px;
+}
+body {
+    /* background-color: rgb(240, 240, 240); */
+    background-color: #EDBB00;
+}
+/* Las dos fuentes principales */
+@font-face {
+    /* Serifa */
+    font-family: RobotoSlap;
+    src: url(../assets/fonts/RobotoSlab-Regular.ttf);
+}
+@font-face {
+    /* Sans serif */
+    font-family: RopaSans;
+    src: url(../assets/fonts/RopaSans-Regular.ttf);
+}
+
+/* Estilos generales para los dos fondos principales */
+.fondo-azul {
+    background-color: #004D98 !important;
+}
+.fondo-rojo {
+    background-color: #A50044 !important;
+}
+/* Estilo para el color del texto general */
+.color-texto {
+    color: white;
+}
+
+/* Estilos para las familias de las fuentes */
+.fuente_serifa {
+    font-family:  RobotoSlap;
+}
+.fuente_sans-serif {
+    font-family: RopaSans;
+}
+
+/* Cabecera con borde */
+.cabecera {
+    border-bottom: 4px solid #FFED02;
+}
+
+/* Estilos de los links del menu (con hover y sin hover) */
+.menu__link {
+    font-family:  RobotoSlap;
+    color: #DB002C;
+    text-decoration: none;
+}
+.menu__link--activo {
+    color: #FFED02;
+    text-decoration: none;
+}
+.menu__link:hover {
+    color: #DB002C;
+    text-decoration: underline;
+}
+.menu__link--activo:hover {
+    color: #FFED02;
+    text-decoration: underline;
+}
+
+/* Estilos del footer */
+.footer {
+    border-top: 4px solid #FFED02;
+}
+.footer__tittle {
+    text-decoration: underline;
+    color: white;
+    font-family: RobotoSlap;
+}
+.footer__list {
+    list-style: none;
+}
+.footer__link {
+    text-decoration: none;
+}
+.footer__link:hover {
+    color: white;
+    text-decoration: underline;
+    font-style: italic;
+}
+    /* Borde para la segunda sección del footer */
+.redes-sociales {
+    border-top: 2px solid #FFED02;
+}

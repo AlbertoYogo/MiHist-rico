@@ -1,0 +1,93 @@
+@font-face {
+    /* Tipografía serif */
+    font-family: garamond;
+    src: url(../assets/fonts/EBGaramond-Regular.ttf);
+}
+@font-face {
+    /* Tipografía sans-serif */
+    font-family: "open sans";
+    src: url(../assets/fonts/OpenSans-Regular.ttf);
+}
+/* Quitamos el margin del body */
+body {
+    margin: 0px;
+    /* Fondo */
+    background-image: url(../assets/images/fondo.jpg);
+    background-repeat: repeat-x;
+    background-color: #EEF3F7;
+}
+/* contenedor con un ancho y centrando todo */
+.gran_contenedor {
+    width: 1200px;
+    margin: 0px auto;
+}
+/* 4 estilos del menú */
+/* Estilos del "nav" */
+.menu {
+    background-color: #347F9D;
+    border-radius: 5px;
+    text-align: center;
+}
+/* Estilos del "a" formado por una imagen y un span */
+.link_menu {
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px 50px;
+}
+/* Tamaños de las imágenes del menú */
+.imagen_menu {
+    width: 25px;
+    height: 25px;
+}
+/* Estilo del "span" del menú. Color  */
+.span_menu {
+    display: block;
+    color: #7E2A46;
+    font-family: garamond;
+}
+/* Estilo del menú cuando pasas el ratón por encima */
+.link_menu:hover {
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 50px;
+    margin: 0px;
+    background-color: #33246B;
+}
+/* Estilos generales de todos los textos */
+.texto {
+    font-family: "open sans";
+}
+
+/* Estilos para el footer general*/
+.footer {
+    /* Fondo y color de la letra */
+    background-color: #14293D;
+    color: white;
+    /* Padding y margin para dejar "aire" por medio */
+    padding: 5px;
+    margin-top: 30px;
+    /* Fuente sans-serif para facilitar la lectura. */
+    font-family: "open sans";
+}
+.lista_footer {
+    /* Lista sin puntos ni numeración */
+    list-style: none;
+    /* Subrayada y centrada */
+    text-decoration: underline;
+    text-align: center;
+}
+.telefono {
+    /* Colocación del "p" del footer */
+    width: 1200px;
+    margin: 0px auto;
+}
+
+/* Estilos de los precios de las páginas */
+.precio {
+    display: block;
+    color: #7E2A46;
+    font-size: 1.5rem;
+    text-align: right;
+    font-variant: small-caps;
+    font-weight: bold;
+}

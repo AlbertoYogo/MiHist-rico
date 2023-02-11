@@ -1,0 +1,102 @@
+/* Estilos formulario: tiene menos ancho que el contenedor general */
+.formulario {
+    width: 1100px;
+    margin: 0px auto;
+    margin-top: 25px;
+}
+
+/* Estilos comunes a todos los fieldset */
+.fieldset_general {
+    color: #7E2A46;
+    border-color: #7E2A46;
+}
+/* Y a cada legend de estos */
+.fieldset_general legend {
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+/* Estilos particulares del fieldset de datos personales */
+.fieldset_datos {
+    /* Ancho */
+    width: 500px;
+    /* Display para que salga a la derecha lo demás */
+    display: inline-block;
+    vertical-align: top;
+    padding-bottom: 22px;
+}
+/* Características de los label e input de datos generales y particulares */
+.cont_label_input {
+    display: inline-block;
+}
+.label_input_datos {
+    display: block;
+}
+.input_datos {
+    margin-top: 14px;
+    height: 16px;
+    border-color: #7E2A46;
+}
+.edad {
+    display: inline-block;
+}
+/* Para cuando seleccionamos los inputs de datos personales */
+.input_datos:focus {
+    border-color: #14293D;
+}
+.label_datos {
+    margin-top: 11px;
+    text-align: right;
+}
+/* Contenedor de los fieldset de radio y checkbox */
+.fieldset_opciones {
+    display: inline-block;
+    width: 300px;
+}
+/* Contenedor botones de submit y reset */
+.botones {
+    display: block;
+    margin-top: 15px;
+}
+/* Estilos del input submit y el cambio cuando pasas el ratón por encima */
+.boton_enviar {
+    width: 520px;
+    margin-right: 40px;
+    padding: 10px;
+    border-color: #7E2A46;
+    color: #7E2A46;
+    background-color: #C6E8F4;
+    font-family: garamond;
+    font-variant: small-caps;
+    font-size: 1.25rem;
+}
+.boton_enviar:hover {
+    background-color: #042a38;
+}
+/* Estilos del input reset y también el color a cuando pasas el ratón por encima */
+.boton_borrar {
+    width: 520px;
+    padding: 10px;
+    background-color: #C6E8F4;
+    border-color: #14293D;
+    font-family: garamond;
+    font-variant: small-caps;
+    font-size: 1.25rem;
+    color: #14293D;
+}
+.boton_borrar:hover {
+    background-color: #62b1ce;
+}
+
+/* Estilos de la sección del mapa */
+.map_section {
+    text-align: center;
+}
+    /* h2 de la sección mapa */
+.map_tittle {
+    color: #7E2A46;
+    text-decoration: underline;
+    font-size: 2rem;
+    font-family: garamond;
+}

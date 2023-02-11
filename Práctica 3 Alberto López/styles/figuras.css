@@ -1,0 +1,76 @@
+/* Estilo para "main" que tiene menos ancho que el contenedor */
+.principal {
+    width: 1000px;
+    margin: 0px auto;
+}
+
+/* Estilos generales para los contenedores de los titulos */
+.cont_img_titulo {
+    padding: 5px;
+    margin: 15px 0px;
+}
+/* Ajustamos la imagen al contenedor */
+.imagen_titulo {
+    width: 100%;
+    height: 100%;
+}
+/* Tamaño particulares para cada titulo */
+/* Zelda */
+.cont_img_titulo_zelda {
+    width: 300px;
+    height: 180px;
+}
+/* God of war */
+.cont_img_titulo_gow {
+    width: 450px;
+    height: 200px;
+}
+/* Pokemon */
+.cont_img_titulo_pokemon {
+    width: 475px;
+    height: 200px;
+}
+
+/* Estilos para cada figura con: marco (div), img y span (precio) */
+.marco {
+    width: 275px;
+    height: 275px;
+    background-color: #BEE9E7;
+    display: inline-block;
+    padding: 10px;
+    padding-bottom: 15px;
+    margin-top: 15px;
+    margin-left: 20px;
+    border-radius: 5%;
+    box-shadow: 2px 2px 5px #14293D;
+    text-align: center;
+    vertical-align: top;
+}
+.precio {
+    margin-right: 10px;
+    /* El resto está en general.css */
+}
+.img_fig {
+    /* Solo un border */
+    border: 1px solid #14293D;
+    /* Dejamos su tamaño original */
+}
+
+/* Algunas imágenes si las ajustamos el tamaño */
+.zelda_2 {
+    width: 175px;
+    height: 240px;
+}
+.gow_1 {
+    width: 240px;
+    height: 240px;
+}
+.gow_2 {
+    width: 250px;
+    height: 200px;
+    margin-bottom: 40px;
+}
+.pokemon {
+    width: 240px;
+    height: 240px;
+}

@@ -1,0 +1,62 @@
+.main {
+    /* Lo de dentro de main centrado */
+    margin: 0px auto;
+}
+
+/* Estilos para los botones */
+.buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+.buttons__tittle {
+    /* Familia del texto de la sección buttons */
+    font-family: 'BIZ UDPMincho';
+    font-size: 1.25rem;
+}
+.buttons__button {
+    /* Estilos de cada botón */
+    /* ancho 200px y tamaño del texto 1.25 rem */
+    width: 200px;
+    margin-top: 10px;
+    background-color: black;
+    color: #C01F25;
+    padding: 5px;
+    border-radius: 8px; 
+    /* Fuente serifa */
+    font-family: 'BIZ UDPMincho';
+    font-size: 1.25rem;
+}
+.buttons__button:hover {
+    /* Al pasar el ratón por encima cambiamos color de texto y de fondo */
+    color: rgb(246, 173, 38);
+    background-color: #9FA3AC;
+}
+
+/* Estilos para todas las tablas */
+.table {
+    /* No ocupa el 100% de main */
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 30px;
+    margin-bottom: 64px;
+    background-color: #4CA1F4;
+    /* Los bordes colapsan */
+    border-collapse: collapse;
+    /* Texto centrado */
+    text-align: center;
+}
+.table__primera-fila {
+    /* La primera fila posee estilos propios */
+    /* Fuente serifa */
+    font-family: 'BIZ UDPMincho';
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.table__celda {
+    /* El resto de celdas con el texto en color blanco */
+    color: white;
+    /* Fuente sans-serif */
+    font-family: Inter;
+    border: 1px solid black;
+    border-collapse: collapse;
+}

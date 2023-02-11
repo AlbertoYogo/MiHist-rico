@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deportes</title>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/images/logo.png">
+</head>
+<body>
+    <header class="cabecera">
+        <!-- Cabecera con el menú -->
+        <nav class="menu">
+            <ul class="menu__lista">
+                <!-- Lista en dos partes -->
+                <div class="menu__parte">
+                    <!-- Parte izquierda para el menú normal -->
+                    <li class="menu__item"><a class="menu__link" href="index.html">Inicio</a> <span class="menu__link menu__link--span"> |</span></li>
+                    <li class="menu__item"><a class="menu__link" href="pages/galeria.html">Galería</a> <span class="menu__link menu__link--span"> |</span></li>
+                    <li class="menu__item"><a class="menu__link" href="pages/estadisticas.html">Estadísticas</a> <span class="menu__link menu__link--span"> |</span></li>
+                    <li class="menu__item"><a class="menu__link" href="pages/mejores_momentos.html">Mejores momentos del deporte</a></li>
+                </div>
+                <div class="menu__parte menu__parte--separacion">
+                    <!-- Parte derecha: imagen de usuario y registrarse -->
+                    <img class="menu__imagen" src="assets/images/usuario.jpg" alt="">
+                    <li class="menu__item"><a class="menu__link menu__link--registrarse" href="pages/registrarse.html">Registrarse</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Main con una sección y un article -->
+        <section class="deportes">
+            <!-- Primera sección de solo información -->
+            <!-- Sección formada por un título y varios párrafos -->
+            <h2 class="deportes__tittle">¿Qué hace específicamente a una actividad un deporte?</h2>
+            <p class="deportes__text">Deporte significa todas las formas de actividad física, las cuales a través de una participación casual u organizada ayudan a expresar o mejorar la condición física y el bienestar mental, fomentar las relaciones sociales u obtener resultados competitivos a todo nivel.</p>
+            <p class="deportes__text">Órganos de fomento del deporte o el propio Comité Olímpico Internacional tienen en cuenta esta definición para determinar cuándo reconocer un nuevo deporte.</p>
+            <p class="deportes__text">Pero a pesar de la letra sobre el papel, el debate continúa y por eso actividades como el ajedrez -considerado el deporte ciencia-, el póker -que cuenta con un fuerte respaldo económico- y otras actividades desean adquirir el estatus de deporte.</p>
+        </section>
+        <article class="deportes">
+            <!-- Article con header, section y footer -->
+            <header>
+                <!-- El header tiene un <h2> como título -->
+                <h2 class="deportes__tittle">¿Cuáles son los deportes más practicados?</h2>
+            </header>
+
+            <section>
+                <!-- La sección del article está formada por una lista -->
+                <ol class="deportes__lista">
+                    <li class="deportes__item">1.- Natación (1.500 millones de practicantes)</li>
+                    <li class="deportes__item">2.- Fútbol (1.002 millones de practicantes)</li>
+                    <li class="deportes__item">3.- Voleibol (998 millones de practicantes)</li>
+                    <li class="deportes__item">4.- Baloncesto (400 millones de practicantes)</li>
+                    <li class="deportes__item">5.- Tenis (300 millones de practicantes) </li>
+                    <li class="deportes__item">6.- Bádminton (200 millones de practicantes)</li>
+                    <li class="deportes__item">7.- Beisbol (60 millones de practicantes)</li>
+                    <li class="deportes__item">8.- Balonmano (18 millones de practicantes)</li>
+                    <li class="deportes__item">9.- Hockey (3 millones de practicantes)</li>
+                    <li class="deportes__item">10.- Rugby (2 millones de practicantes)</li>
+                </ol>
+            </section>
+
+            <footer class="actualizacion">
+                <!-- El footer tiene una fecha puesta con JS -->
+                <p>Actualizado a: <span id="dia"></span> de <span id="mes"></span> de <span id="anno"></span></p>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <!-- Footer en dos partes -->
+        <div class="noticias">
+            <!-- Primera con un título y una lista -->
+            <h2 class="noticias__tittle">Noticias</h2>
+            <ul class="noticias__lista">
+                <li class="noticias__item"><a href="#" class="noticias__link">Alcaraz gana en Barcelona</a></li>
+                <li class="noticias__item"><a href="#" class="noticias__link">Liverpool clasificado a la final de la UCL</a></li>
+                <li class="noticias__item"><a href="#" class="noticias__link">Domingo 22 de Mayo, circuito de catalunya</a></li>
+                <li class="noticias__item"><a href="#" class="noticias__link">Clásico en la Final 4 de la euroliga</a></li>
+                <li class="noticias__item"><a href="#" class="noticias__link">Real Madrid campeón de La Liga Santander</a></li>
+            </ul>
+        </div>
+        <div class="footer__logo">
+            <!-- Segunda con la imagen del logo -->
+            <img src="assets/images/logo.png" class="footer__img" alt="">
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

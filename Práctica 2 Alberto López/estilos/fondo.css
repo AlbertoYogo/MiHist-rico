@@ -1,0 +1,8 @@
+/* Body para poner la imagen de fondo que cubre toda la página y está fijadda. */
+/* Fondo usado en las páginas "rapaces", "pájaros" y "corredoras" */
+body {
+    background-image: url(../assets/imágenes/fondo2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

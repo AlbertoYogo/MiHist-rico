@@ -1,0 +1,43 @@
+/* Estilos para la sección galeria */
+.galeria {
+    margin-top: 40px;
+    /* Los elementos de la sección son wrap */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+    justify-content: center;
+}
+.galeria__cont {
+    /* Cada contenedor ocupa un 20% (Siempre hay 4 por fila) */
+    width: 290px;
+    /* Estilos a modo de marco */
+    background-color: #DA1F26;
+    padding: 3px;
+    border-radius: 10px;
+    border: 2px solid #4CA1F4;
+    margin: 10px 10px;
+}
+.galeria__img {
+    /* La imagen se adapta al contenedor */
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Estilos para la parte inferior 
+donde se pone una pequeña descripción al dar click en la imagen */
+.descripcion {
+    /* Estilos para color y dar un toque diferencial */
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #4CA1F4;
+    padding: 15px;
+}
+
+.descripcion__text {
+    /* Tamaño, color y familia del texto */
+    font-family: Inter;
+    font-size: 1.1rem;
+    color: white;
+}
