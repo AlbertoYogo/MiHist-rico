@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deportes</title>
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/registrarse.css">
+    <link rel="icon" href="../assets/images/logo.png">
+</head>
+<body>
+    <header class="cabecera">
+        <!-- Cabecera con el menú -->
+        <nav class="menu">
+            <ul class="menu__lista">
+                <!-- Lista en dos partes -->
+                <div class="menu__parte">
+                    <!-- Parte izquierda para el menú normal -->
+                    <li class="menu__item"><a class="menu__link" href="../index.html">Inicio</a> <span class="menu__link menu__link--span"> |</span></li>
+                    <li class="menu__item"><a class="menu__link" href="galeria.html">Galería</a> <span class="menu__link menu__link--span"> |</span></li>
+                    <li class="menu__item"><a class="menu__link" href="estadisticas.html">Estadísticas</a> <span class="menu__link menu__link--span"> |</span></li>
+                    <li class="menu__item"><a class="menu__link" href="mejores_momentos.html">Mejores momentos del deporte</a></li>
+                </div>
+                <div class="menu__parte menu__parte--separacion">
+                    <!-- Parte derecha: imagen de usuario y registrarse -->
+                    <img class="menu__imagen" src="../assets/images/usuario.jpg" alt="">
+                    <li class="menu__item"><a class="menu__link menu__link--registrarse" href="registrarse.html">Registrarse</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Main con solo una sección -->
+        <section class="seccion_formulario">
+            <!-- La sección contiene un formulario -->
+            <form class="formulario" action="correo@gmail.com" method="get">
+                <!-- Varios div formados con un input y un label -->
+                <div class="formularios__bloques">
+                    <label class="formulario__label" for="nombre">*Nombre</label><input class="formulario__input obligatorio" autofocus required id="nombre" placeholder="Nombre" type="text">
+                    <p class="Rellenar" style="display: none;">*Rellenar este campo</p>
+                </div>
+                <div class="formularios__bloques">
+                    <label class="formulario__label" for="Apellidos">*Apellidos</label><input class="formulario__input obligatorio" required id="Apellidos" placeholder="Apellidos" type="text">
+                    <p class="Rellenar" style="display: none;">*Rellenar este campo</p>
+                </div>
+                <div class="formularios__bloques">
+                    <label class="formulario__label" for="correo">*Correo electrónico</label><input class="formulario__input obligatorio" required id="correo" placeholder="Ejemplo@gmail.com" type="email">
+                    <p class="Rellenar" style="display: none;">*Rellenar este campo</p>
+                </div>
+                <div class="formulario__doble">
+                    <!-- Único contenedor con dos div (con input y label cada uno)
+                    que se colocan en la misma linea -->
+                    <div class="formularios__bloques formularios__bloques--dobles">
+                        <label class="formulario__label" for="Edad">Edad</label><input class="formulario__input formulario__input--doble" id="Edad" placeholder="Edad" type="number">
+                    </div>
+                    <div class="formularios__bloques formularios__bloques--dobles">
+                        <label class="formulario__label" for="fecha">*Fecha de nacimiento</label><input class="formulario__input formulario__input--doble obligatorio" id="fecha" required placeholder="fecha" type="date">
+                        <p class="Rellenar" style="display: none;">*Rellenar este campo</p>
+                    </div>
+                </div>
+                <div class="formularios__bloques">
+                    <label class="formulario__label" for="pais">País</label>
+                    <select name="País" class="formulario__input" id="pais">
+                        <!-- 4 options para el select -->
+                        <option value="#">Elige un país</option>
+                        <option value="España">España</option>
+                        <option value="Portugal">Portugal</option>
+                        <option value="Francia">Francia</option>
+                    </select>
+                </div>
+                <div class="formulario__botones">
+                    <!-- Último contenedor con los dos botones (submit y reset) -->
+                    <input type="reset" id="btn_borrar" class="formulario__boton formulario__boton--reset" value="Borrar">
+                    <input type="submit" id="btn_enviar" class="formulario__boton formulario__boton--enviar" value="Enviar">
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <!-- Footer en dos partes -->
+        <div class="noticias">
+            <!-- Primera con un título y una lista -->
+            <h2 class="noticias__tittle">Noticias</h2>
+            <ul class="noticias__lista">
+                <li class="noticias__item"><a href="#" class="noticias__link">Alcaraz gana en Barcelona</a></li>
+                <li class="noticias__item"><a href="#" class="noticias__link">Liverpool clasificado a la final de la UCL</a></li>
+                <li class="noticias__item"><a href="#" class="noticias__link">Domingo 22 de Mayo, circuito de catalunya</a></li>
+                <li class="noticias__item"><a href="#" class="noticias__link">Clásico en la Final 4 de la euroliga</a></li>
+                <li class="noticias__item"><a href="#" class="noticias__link">Real Madrid campeón de La Liga Santander</a></li>
+            </ul>
+        </div>
+        <div class="footer__logo">
+            <!-- Segunda con la imagen del logo -->
+            <img src="../assets/images/logo.png" class="footer__img" alt="">
+        </div>
+    </footer>
+
+    <script src="../js/registrarse.js"></script>
+</body>
+</html>

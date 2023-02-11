@@ -1,0 +1,127 @@
+* {
+    /* Importante cambiar el box-sizing y el margin */
+    box-sizing: border-box;
+    margin: 0px;
+}
+body {
+    margin: 0px;
+    /* Fondo general */
+    background-color: #dbdbdb;
+}
+@font-face {
+    /* Sans serif */
+    font-family: Inter;
+    src: url(../assets/fonts/Inter-Regular.ttf);
+}
+@font-face {
+    /* Serifa */
+    font-family: 'BIZ UDPMincho';
+    src: url(../assets/fonts/BIZUDPMincho-Regular.ttf);
+}
+
+/* Header general */
+.cabecera {
+    background-color: #7B1418;
+    padding: 5px;
+}
+.menu {
+    margin-top: 5px;
+}
+.menu__lista {
+    /* Las dos partes de la lista con space-between */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.menu__parte {
+    /* Cada div del nav */
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+.menu__parte--separacion {
+    /* Para que el de la derecha no esté pegado al borde */
+    margin-right: 20px;
+}
+.menu__imagen {
+    /* Imagen redondeada (foto perfil del usuario) */
+    border-radius: 50%;
+    width: 45px;
+    height: 40px;
+}
+.menu__imagen:hover {
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.749);
+}
+.menu__item {
+    display: flex;
+
+}
+.menu__link {
+    text-decoration: none;
+    display: block;
+    font-family: 'BIZ UDPMincho';
+    color: white;
+    font-size: 1.25rem;
+}
+.menu__link--span {
+    /* Para el '|' que separa */
+    margin-left: 5px;
+}
+.menu__link:hover {
+    text-decoration: underline;
+    color: #2196F3;
+}
+.menu__link--registrarse {
+    /* El link de registrarse cambia los colores */
+    color: #2196F3;
+}
+.menu__link--registrarse:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+
+
+.main {
+    /* Ancho del main */
+    width: 80%;
+}
+
+
+.footer {
+    /* Footer con flex */
+    margin-top: 40px;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #7B1418;
+    border-top: 4px solid #2196F3;
+
+}
+
+/* Primera parte del footer */
+.noticias__tittle {
+    /* Título primera parte footer */
+    text-align: center;
+    color: white;
+    font-family: 'BIZ UDPMincho';
+    text-decoration: underline;
+}
+.noticias__lista {
+    list-style: none;
+    margin-top: 20px;
+}
+.noticias__item {
+    margin: 12px auto;
+}
+.noticias__link {
+    color: #2196F3;
+    text-decoration: none;
+    font-family: Inter;
+}
+.noticias__link:hover {
+    color: white;
+    text-decoration: underline;
+    font-size: 1.1rem;
+}

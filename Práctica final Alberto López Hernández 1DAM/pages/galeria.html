@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deportes</title>
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/galeria.css">
+    <link rel="icon" href="../assets/images/logo.png">
+</head>
+<body>
+    <header class="cabecera">
+        <!-- Cabecera con el menú -->
+        <nav class="menu">
+            <ul class="menu__lista">
+                <!-- Lista en dos partes -->
+                <div class="menu__parte">
+                    <!-- Parte izquierda para el menú normal -->
+                    <li class="menu__item"><a class="menu__link" href="../index.html">Inicio</a> <span class="menu__link menu__link--span"> |</span></li>
+                    <li class="menu__item"><a class="menu__link" href="galeria.html">Galería</a> <span class="menu__link menu__link--span"> |</span></li>
+                    <li class="menu__item"><a class="menu__link" href="estadisticas.html">Estadísticas</a> <span class="menu__link menu__link--span"> |</span></li>
+                    <li class="menu__item"><a class="menu__link" href="mejores_momentos.html">Mejores momentos del deporte</a></li>
+                </div>
+                <div class="menu__parte menu__parte--separacion">
+                    <!-- Parte derecha: imagen de usuario y registrarse -->
+                    <img class="menu__imagen" src="../assets/images/usuario.jpg" alt="">
+                    <li class="menu__item"><a class="menu__link menu__link--registrarse" href="registrarse.html">Registrarse</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="mainn">
+        <!-- Main con una sección con imágenes y otra con texto -->
+        <section class="galeria" id="gallery">
+            <!-- Primera sección formada por varios div -->
+            <div class="galeria__cont">
+                <!-- Cada div con una imagen vacia que luego carga el js -->
+                <img class="galeria__img" src="#" alt="">
+            </div>
+            <div class="galeria__cont">
+                <img class="galeria__img" src="#" alt="">
+            </div>
+            <div class="galeria__cont">
+                <img class="galeria__img" src="#" alt="">
+            </div>
+            <div class="galeria__cont">
+                <img class="galeria__img" src="#" alt="">
+            </div>
+            <div class="galeria__cont">
+                <img class="galeria__img" src="#" alt="">
+            </div>
+            <div class="galeria__cont">
+                <img class="galeria__img" src="#" alt="">
+            </div>
+            <div class="galeria__cont">
+                <img class="galeria__img" src="#" alt="">
+            </div>
+            <div class="galeria__cont">
+                <img class="galeria__img" src="#" alt="">
+            </div>
+        </section>
+
+        <section class="descripcion">
+            <!-- Sección con solo texto que carga al pulsar en la img -->
+            <p id="desc" class="descripcion__text"> Descripción: <span id="desc__span"></span></p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <!-- Footer en dos partes -->
+        <div class="noticias">
+            <!-- Primera con un título y una lista -->
+            <h2 class="noticias__tittle">Noticias</h2>
+            <ul class="noticias__lista">
+                <li class="noticias__item"><a href="#" class="noticias__link">Alcaraz gana en Barcelona</a></li>
+                <li class="noticias__item"><a href="#" class="noticias__link">Liverpool clasificado a la final de la UCL</a></li>
+                <li class="noticias__item"><a href="#" class="noticias__link">Domingo 22 de Mayo, circuito de catalunya</a></li>
+                <li class="noticias__item"><a href="#" class="noticias__link">Clásico en la Final 4 de la euroliga</a></li>
+                <li class="noticias__item"><a href="#" class="noticias__link">Real Madrid campeón de La Liga Santander</a></li>
+            </ul>
+        </div>
+        <div class="footer__logo">
+            <!-- Segunda con la imagen del logo -->
+            <img src="../assets/images/logo.png" class="footer__img" alt="">
+        </div>
+    </footer>
+
+    <script src="../js/galeria.js"></script>
+</body>
+</html>
