@@ -1,0 +1,41 @@
+/* Body para el fondo */
+body {
+    background-color: #8F726A;
+}
+.contenedor_imagen_uno {
+    text-align: center;
+}
+/* Estilos de los h2 */
+.subtítulos {
+    font-family: caveat;
+    font-size: 2rem;
+    color: #733445;
+}
+/* Principalmente el display para alinear con la imagen */
+.particular {
+    display: inline-block;
+    vertical-align: top;
+    width: 700px;
+    margin: 10px;
+}
+/* Ajustar el tamaño de la imagen dos */
+.imagen_dos {
+    width: 250px;
+    height: 200px;
+}
+
+/* Ajustar el tamaño de la imagen tres */
+.imagen_tres {
+    width: 250px;
+    height: 300px;
+    float: right;
+}
+.contenedor_imagen_tres {
+    width: 100%;
+    text-align: right;
+}
+/* La clase "separación" es para poner un margin y alejar el footer de la imagen tres */
+.separación {
+    margin-top: 180px;
+    margin-bottom: 40px;
+}

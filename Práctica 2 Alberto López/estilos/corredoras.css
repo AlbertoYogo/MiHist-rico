@@ -1,0 +1,42 @@
+/* Contenedor de la primera imagen para ajustar tamaño y colocarla. */
+.contenedor_imagen {
+    margin: 0px auto;
+    width: 900px;
+    height: 350px;
+    margin-top: 15px;
+}
+/* Clase para las imágenes para mantener proporciones */
+.imagenes {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+}
+/* Clase para los h2 para cambiar su fuente */
+.subtitulos {
+    font-family: caveat;
+    color: #733445;
+    font-size: 2.25rem;
+    background-color: #b3807e7e;
+    background-size: contain;
+}
+/* Contenedores para las imágenes dos y tres para proporcionar su tamaño */
+.contenedor_imagen_dos {
+    display: inline-block;
+    width: 350px;
+    height: 250px;
+    margin-right: 50px;
+}
+.contenedor_imagen_tres {
+    display: inline-block;
+    width: 350px;
+    height: 200px;
+}
+/* Contenedor general de las imágenes dos y tres para centrar */
+.galeria {
+    text-align: center;
+}
+/* Estilos para la lista. Principalmente para el tamaño. */
+.lista {
+    font-size: 1.25rem;
+    line-height: 30px;
+}

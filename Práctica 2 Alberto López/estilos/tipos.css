@@ -1,0 +1,38 @@
+
+/* Body para el fondo de esta página */
+body {
+    background-color: #8F726A;
+}
+/* Características específicas del "caption" que no están en el título del general. */
+.titulo_tabla {
+    font-size: 2rem;
+    margin: 10px auto;
+    border-radius: 10px;
+    border: 0px;
+    border: 0px;
+    background-color: #b3807ecb;
+    width: 270px;
+}
+/* Características de la tabla */
+table {
+    border-collapse: collapse;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    background-color:#C7898A;
+    width: 950px;
+}
+/* Estilo conjunto de los "th" y "td" para los bordes */
+table th,
+table td {
+    border: 1px solid #5B222A;
+}
+/* Estilo de los "th". Small-caps, color de fondo y un pequeño padding */
+table th {
+    font-variant: small-caps;
+    background-color: #4F3244 ;
+    padding: 5px;
+}
+/* Estilo de los primeros td para subrayarlos. */
+.fila_uno {
+    text-decoration: underline;
+}
