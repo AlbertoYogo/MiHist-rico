@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merchanshop</title>
+    <link rel="stylesheet" href="../styles/general.css">
+    <link rel="stylesheet" href="../styles/posters.css">
+    <link rel="icon" href="../assets/images/tienda.png">
+</head>
+<body>
+    <div class="gran_contenedor">
+     
+    <header>
+        <!-- El menú de siempre formado por links con una imagen y un span -->
+        <nav class="menu"> 
+            <a href="../index.html" class="link_menu">
+                <img src="../assets/images/Menú/inicio.png" class="imagen_menu">
+                <span class="span_menu"> Inicio </span>
+            </a>
+            <a href="posters.html" class="link_menu">
+                <img src="../assets/images/Menú/poster.png" class="imagen_menu">
+                <span class="span_menu"> Posters </span>
+            </a>
+            <a href="figuras.html" class="link_menu">
+                <img src="../assets/images/Menú/figura.png" class="imagen_menu">
+                <span class="span_menu"> Figuras </span>
+            </a>
+            <a href="ropa.html" class="link_menu">
+                <img src="../assets/images/Menú/ropa.png" class="imagen_menu">
+                <span class="span_menu"> Ropa </span>
+            </a>
+            <a href="cartas.html" class="link_menu">
+                <img src="../assets/images/Menú/cartas.png" class="imagen_menu">
+                <span class="span_menu"> Cartas </span>
+            </a>
+            <a href="ayuda.html" class="link_menu">
+                <img src="../assets/images/Menú/ayuda.png" class="imagen_menu">
+                <span class="span_menu"> Ayuda </span>
+            </a>
+        </nav>
+    </header>
+    <!-- La sección principal formada por dos sections. -->
+    <main>
+        <!-- El primer section es una galería -->
+        <section class="galeria">
+            <!-- Contenedor para un marco -->
+            <div class="marco subir">
+                <!-- Cada contenedor posee una imagen y un span con el precio -->
+                <img src="../assets/images/posters/poster grande1.jpg" alt="" class="imagen_galeria">
+                <span class="precio texto">9€</span>
+            </div>
+            <div class="marco">
+                <img src="../assets/images/posters/poster grande2.jpg" alt="" class="imagen_galeria">
+                <span class="precio texto">9€</span>
+            </div>
+            <div class="marco subir">
+                <img src="../assets/images/posters/poster grande3.jpg" alt="" class="imagen_galeria">
+                <span class="precio texto">9€</span>
+            </div>
+            <div class="marco marco_horizontal">
+                <img src="../assets/images/posters/poster mediano1.jpg" alt="" class="imagen_galeria">
+                <span class="precio texto">7€</span>
+            </div>
+            <div class="marco marco_horizontal derecha">
+                <img src="../assets/images/posters/poster mediano2.jpg" alt="" class="imagen_galeria">
+                <span class="precio texto">7€</span>
+            </div>
+            <div class="marco marco_horizontal derecha">
+                <img src="../assets/images/posters/poster mediano3.jpg" alt="" class="imagen_galeria">
+                <span class="precio texto">7€</span>
+            </div>
+            <div class="marco bajar">
+                <img src="../assets/images/posters/poster pequeño1.jpg" alt="" class="imagen_galeria">
+                <span class="precio texto">6€</span>
+            </div>
+            <div class="marco">
+                <img src="../assets/images/posters/poster pequeño2.jpg" alt="" class="imagen_galeria">
+                <span class="precio texto">6€</span>
+            </div>
+            <div class="marco bajar">
+                <img src="../assets/images/posters/poster pequeño3.jpg" alt="" class="imagen_galeria">
+                <span class="precio texto">6€</span>
+            </div>
+        </section>
+        <!-- La segunda sección consiste en una tabla -->
+        <section>
+            <table class="tabla">
+                <!-- Tabla formada por 4 filas con 3 columnas cada una. -->
+                <tr>
+                    <!-- La primera fila posee th para marcar la importancia de estas celdas -->
+                    <th>Tamaño</th>
+                    <th>Medida</th>
+                    <th>Precio</th>
+                </tr>
+                <tr>
+                    <td>Grande</td>
+                    <td>A3 (297 X 420 mm)</td>
+                    <td>9€</td>
+                </tr>
+                <tr>
+                    <td>Mediano</td>
+                    <td>A4 (297 X 210 mm)</td>
+                    <td>7€</td>
+                </tr>
+                <tr>
+                    <td>Pequeño</td>
+                    <td>A5 (148 X 210 mm)</td>
+                    <td>6€</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    </div>
+
+    <!-- El mismo footer formado por una p y una lista -->
+    <footer class="footer">
+        <p class="telefono"> Teléfono de atención al cliente: <strong>634 89 32 44 </strong> </p>
+        <ul class="lista_footer">
+            <li> Información legal </li>
+            <li> Política de privacidad </li>
+            <li> Política de cookies </li>
+            <li> Condiciones legales </li>
+        </ul>
+    </footer>
+</body>
+</html>

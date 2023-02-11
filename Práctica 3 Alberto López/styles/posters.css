@@ -1,0 +1,59 @@
+/* Galería */
+.galeria {
+    width: 1000px;
+    margin: 0px auto;
+}
+
+/* Estilos del marco: tamaño, colore, display, etc. */
+.marco {
+    width: 250px;
+    height: 350px;
+    background-color: #BEE9E7;
+    display: inline-block;
+    padding: 10px;
+    padding-bottom: 35px;
+    margin-top: 15px;
+    margin-left: 20px;
+    border-radius: 5%;
+    box-shadow: 2px 2px 5px #14293D;
+    position: relative;
+}
+.marco_horizontal {
+    width: 250px;
+    height: 180px;
+}
+.imagen_galeria {
+    width: 100%;
+    height: 100%;
+}
+
+/* Tabla */
+
+.tabla {
+    width: 1000px;
+    margin: 0px auto;
+    background-color: #BEE9E7;
+    margin-top: 30px;
+}
+/* Estilo para cada celda. */
+.tabla th,
+.tabla td {
+     border: 1px solid #14293D;
+    width: 334px;
+}
+.tabla td {
+    color: #7E2A46;
+    text-align: center;
+}
+
+/* Ejercicio galeria - posicionamiento */
+.subir {
+    top: -1rem;
+}
+.bajar {
+    top: 1rem;
+}
+.derecha {
+    left: 3rem;
+}
+

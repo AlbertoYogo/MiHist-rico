@@ -1,0 +1,24 @@
+/* Estilos de los artículos del index. Todo iguales */
+.articulos {
+    background-color: #BEE9E7;
+    width: 1000px;
+    margin: 0px auto;
+    padding: 5px;
+    border-radius: 1px;
+    box-shadow: 2px 2px 1px #14293D;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+/* Estilo de los h2 para la fuente. */
+.subtitulos {
+    font-family: garamond;
+}
+/* Colocación de imagen y ponemos un borde. */
+.imagen_articulo {
+    margin: 0px auto;
+    border: 1px solid black;
+}
+/* Colocación de los footer de cada article y el section del index.html  */
+.footer_articulos {
+    text-align: center;
+}

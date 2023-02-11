@@ -1,0 +1,76 @@
+/* Sección main con menos ancho que el contenedor. */
+.principal {
+    width: 1000px;
+    margin: 0px auto;
+}
+/* Estilos para las secciones */
+.secciones_ropa {
+    border-bottom: 1px solid black;
+    /* Padding para dejar un poco de aire */
+    padding: 5px;
+    /* Margin-top para separar entre ellas */
+    margin-top: 20px;
+}
+.secciones_ropa:hover {
+    /* Para cuando pasamos el ratón: poner borde gris donde no hay negro */
+    border: 1px solid gray;
+    border-bottom: 1px solid black;
+    padding: 5px;
+    margin-top: 20px;
+}
+/* Estilos para la imagen */
+.contenedor_img_ropa {
+    /* Contenedor con ancho y alto para el tamaño */
+    width: 150px;
+    height: 150px; 
+    display: inline-block; /* IMPORTANTE: Convertir en elemento de línea*/
+    margin-right: 15px;
+}
+.img_cod {
+    /* Tamaño para la sudadera cod para que no se desproporcione */
+    width: 125px;
+    height: 150px;
+}
+.img_ropa {
+    /* Todas las imágenes se ajustan al contenedor */
+    width: 100%;
+    height: 100%;
+}
+/* Estilos para el segundo contenedor de las secciones */
+.contenedor_nom_pre {
+    display: inline-block; /* IMPORTANTE: Convertir en elemento de línea*/
+    /* Lo colocamos arriba */
+    vertical-align: top;
+}
+.nombre_ropa {
+    /* Estilos para los h2 */
+    /* Negrita, fuente garamond, tamaño y un pequeño margin */
+    font-weight: bold;
+    font-family: garamond;
+    font-size: 1.75rem;
+    margin-bottom: 3px;
+}
+.precio_ropa {
+    /* Estilos particulares de los preciones de esta página */
+    text-align: left;
+    font-size: 1.25rem;
+    color: gray;
+    margin-top: 0px;
+}
+/* Estilos para el "más información" */
+.info {
+    /* Span convertido en elemento de bloque */
+    display: block;
+    /* Alineado a la derecha, fuente open sans y color */
+    text-align: right;
+    font-family: "open sans";
+    color: #7E2A46;
+}
+.info:hover {
+    display: block;
+    text-align: right;
+    font-family: "open sans";
+    color: #7E2A46;
+    /* Subrayamos cuando pasa el ratón por encima */
+    text-decoration: underline;
+}
